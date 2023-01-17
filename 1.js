@@ -32,21 +32,23 @@ const arr3 = arr.reduce((acc, el) => acc + el, 0);
 console.log(arr3);
 
 // #3
-// function DNAtoRNA(dna) {
-//     let a,
-//         b;
-//     a = dna.indexOf('T');
+function DNAtoRNA(dna) {
+    let a,
+        b;
+    a = dna.indexOf('T');
         
 
-//   }
+  }
 
 
-// let a = 'GCAT',
-//     b = 'ACTG',
-//     c = 'TCAG';
-// console.log(a.indexOf('T'));
-// console.log(b.indexOf('T'));
-// console.log(c.indexOf('T'));
+let a = 'GCAT',
+    b = 'ACTG',
+    c = 'TCAG';
+console.log(a.indexOf('T'));
+console.log(b.indexOf('T'));
+console.log(c.indexOf('T'));
+let d = `${a[0]}${a[1]}${a[2]}U`;
+console.log(d);
 
 // #4 Even or Odd
 function evenOrOdd(number) {
@@ -58,4 +60,22 @@ console.log(evenOrOdd(2));
 console.log(evenOrOdd(-4));
 console.log(evenOrOdd(-17));
 
+// #5
+function paperwork(n, m) {
+  return n < 0 || m < 0 ? 0 : n * m;
+}
+console.log(paperwork(5, 3));
+console.log(paperwork(-5, 3));
+console.log(paperwork(0, 3));
+console.log(paperwork(5, 15));
 
+// #6
+function simpleMultiplication(number) {
+    return number % 2 === 0 ? number * 8 : number * 9;
+}
+
+console.log(simpleMultiplication(2));
+console.log(simpleMultiplication(1));
+console.log(simpleMultiplication(8));
+console.log(simpleMultiplication(4));
+console.log(simpleMultiplication(5));
