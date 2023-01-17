@@ -79,3 +79,22 @@ console.log(simpleMultiplication(1));
 console.log(simpleMultiplication(8));
 console.log(simpleMultiplication(4));
 console.log(simpleMultiplication(5));
+
+// #7
+function century(year) {
+    year /= 100;
+    let a = Math.ceil(year);
+    return a;
+  }
+
+console.log(century(1831));
+console.log(century(1601));
+console.log(century(2000));
+
+// #8
+function squareSum(numbers){
+    const newNum = numbers.map((el => el ** 2)).reduce((total, elem) => total + elem, 0);
+    return newNum;
+}
+console.log(squareSum([9, 24, 4, 2, 6, 8]));
+
