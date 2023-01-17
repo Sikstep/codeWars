@@ -98,3 +98,17 @@ function squareSum(numbers){
 }
 console.log(squareSum([9, 24, 4, 2, 6, 8]));
 
+// #9
+function numberToString(num) {
+    let a = `${num}`;
+    return a;
+  }
+
+console.log(typeof(numberToString(-123)));
+
+// #10
+const stringToNumber = function(str){
+    return +str;
+  };
+
+console.log(typeof(stringToNumber('5')));
