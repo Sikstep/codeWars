@@ -187,12 +187,12 @@ function shortcut(string) {
 }
 
 // #20
-function findSmallestInt(args) {
+function findSmallestIntt(args) {
   let newArgs = args.sort((a, b) => a - b).shift();
   return newArgs;
 }
 console.log(
-  findSmallestInt([
+  findSmallestIntt([
     -5, 5, 1, -32, -45, 122, -56, -100, -54, -132, -186, -115, -154, -245,
   ])
 );
@@ -215,3 +215,12 @@ function trim(str, size) {
 }
 
 console.log(trim("Creating kata is fun", 14));
+
+// best solution:
+function trimm(arr, size) {
+  return arr.length <= size
+    ? arr
+    : arr.slice(0, arr.length > 3 ? size - 3 : size) + "...";
+}
+
+console.log(trimm("Lost my soul bro!!!", 50));
