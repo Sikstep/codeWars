@@ -134,3 +134,12 @@ function past(h, m, s) {
 function invert(array) {
   return array.map((a) => a * -1);
 }
+// #15
+function repeatStr(n, s) {
+  let result = "";
+  for (let i = 1; i <= n; i++) {
+    result += s;
+  }
+  return result;
+}
+console.log(repeatStr(5, "Hello"));
