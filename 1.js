@@ -160,3 +160,8 @@ function powersOfTwo(n) {
   return result;
 }
 console.log(powersOfTwo(2));
+// #18
+function grow(x) {
+  return x.reduce((total, el) => total * el, 1);
+}
+console.log(grow([0, 2, 5]));
