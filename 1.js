@@ -143,3 +143,20 @@ function repeatStr(n, s) {
   return result;
 }
 console.log(repeatStr(5, "Hello"));
+// #16
+function addLength(str) {
+  return str.split(" ").map((a) => `${a} ${a.length}`);
+}
+console.log(addLength("Lost my soul"));
+
+// #17
+function powersOfTwo(n) {
+  let result = [],
+    i = 0;
+  while (i <= n) {
+    result.push(2 ** i);
+    i++;
+  }
+  return result;
+}
+console.log(powersOfTwo(2));
