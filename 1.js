@@ -203,3 +203,15 @@ function findSmallestInt(args) {
 }
 let arrA = [1, 5, -12, 2, 4, -19, -255];
 console.log(Math.max(...arrA));
+// #21
+function trim(str, size) {
+  if (str.length <= size) {
+    return str;
+  } else if (str.length <= 3) {
+    return `${str.substr(0, size)}...`;
+  } else {
+    return `${str.substr(0, size - 3)}...`;
+  }
+}
+
+console.log(trim("Creating kata is fun", 14));
