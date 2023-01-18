@@ -180,3 +180,26 @@ function shortcut(string) {
 }
 
 console.log(shortcut("hello"));
+
+// best solution:
+function shortcut(string) {
+  return string.replace(/[aeiou]/g, "");
+}
+
+// #20
+function findSmallestInt(args) {
+  let newArgs = args.sort((a, b) => a - b).shift();
+  return newArgs;
+}
+console.log(
+  findSmallestInt([
+    -5, 5, 1, -32, -45, 122, -56, -100, -54, -132, -186, -115, -154, -245,
+  ])
+);
+
+// best solution:
+function findSmallestInt(args) {
+  return Math.min(...args);
+}
+let arrA = [1, 5, -12, 2, 4, -19, -255];
+console.log(Math.max(...arrA));
