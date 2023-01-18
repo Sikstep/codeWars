@@ -165,3 +165,18 @@ function grow(x) {
   return x.reduce((total, el) => total * el, 1);
 }
 console.log(grow([0, 2, 5]));
+// #19
+function shortcut(string) {
+  let newString = [];
+  for (key of string.split("")) {
+    console.log(key);
+    if (key == "e" || key == "a" || key == "i" || key == "u" || key == "o") {
+      continue;
+    } else {
+      newString.push(key);
+    }
+  }
+  return newString.join("");
+}
+
+console.log(shortcut("hello"));
