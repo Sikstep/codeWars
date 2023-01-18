@@ -117,3 +117,11 @@ console.log(typeof stringToNumber("5"));
 function reverseWords(str) {
   return str.split(" ").reverse().join(" ");
 }
+
+// #12
+function litres(time) {
+  let litres = 0;
+  litres = Math.floor(time * 0.5);
+  return litres;
+}
+litres(11.8);
