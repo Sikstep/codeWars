@@ -7,7 +7,7 @@ function otherAngle(a, b) {
 }
 
 // #2// Sum Numbers
-let arr = [1, 5.2, 4, 0, -1];
+// let arr = [1, 5.2, 4, 0, -1];
 let arr2 = [];
 
 function sum(numbers) {
@@ -225,9 +225,9 @@ function trimm(arr, size) {
 
 console.log(trimm("Lost my soul bro!!!", 50));
 // №22
-const arr = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 15, -25, 10, -11, -12, -13, -14, -15,
-];
+// const arr = [
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 15, -25, 10, -11, -12, -13, -14, -15,
+// ];
 
 function countPositivesSumNegatives(input) {
   let newArr = [];
@@ -249,3 +249,21 @@ const reverseSeq = (n) => {
   return arr;
 };
 console.log(reverseSeq(15));
+// #24
+function solution(str) {
+  return str.split("").reverse().join("");
+}
+console.log(solution("Alegarda"));
+
+// №25
+var isSquare = function (n) {
+  return Number.isInteger(Math.sqrt(n)) ? true : false;
+};
+console.log(isSquare(121));
+
+// best solution
+
+// var isSquare = function(n){
+//   return Number.isInteger(Math.sqrt(n));
+// }
+// console.log(isSquare(121));
