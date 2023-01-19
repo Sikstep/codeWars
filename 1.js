@@ -267,3 +267,49 @@ console.log(isSquare(121));
 //   return Number.isInteger(Math.sqrt(n));
 // }
 // console.log(isSquare(121));
+
+// #26
+function countSheeps(arrayOfSheep) {
+  let count = 0;
+  for (let key of arrayOfSheep) {
+    if (key) {
+      ++count;
+    }
+  }
+
+  return count;
+}
+
+console.log(
+  countSheeps([
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+  ])
+);
+
+// best solution
+// function countSheeps(arrayOfSheeps) {
+//   return arrayOfSheeps.filter(Boolean).length;
+// }
