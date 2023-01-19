@@ -224,3 +224,19 @@ function trimm(arr, size) {
 }
 
 console.log(trimm("Lost my soul bro!!!", 50));
+// №22
+const arr = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 15, -25, 10, -11, -12, -13, -14, -15,
+];
+
+function countPositivesSumNegatives(input) {
+  let newArr = [];
+  if (input === null || input.length === 0) {
+    return [];
+  } else {
+    newArr.push(input.filter((a) => a > 0).length);
+    newArr.push(input.filter((a) => a < 0).reduce((a, b) => a + b, 0));
+  }
+  return newArr;
+}
+console.log(countPositivesSumNegatives([]));
