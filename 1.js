@@ -313,3 +313,5 @@ console.log(
 // function countSheeps(arrayOfSheeps) {
 //   return arrayOfSheeps.filter(Boolean).length;
 // }
+let boolArr = [true, true, false, false, true];
+console.log(boolArr.filter(Boolean));
