@@ -410,3 +410,9 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return distanceToPump - mpg * fuelLeft <= 0;
 };
 console.log(zeroFuel(100, 50, 2.5));
+
+// #32
+function boolToWord(bool) {
+  return bool ? "Yes" : "No";
+}
+console.log(true);
