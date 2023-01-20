@@ -437,3 +437,4 @@ function XOo(str) {
   let o = str.match(/o/gi);
   return (x && x.length) === (o && o.length);
 }
+console.log("as000 234 2135123dw0213j".match(/[013]/gi));
