@@ -438,3 +438,17 @@ function XOo(str) {
   return (x && x.length) === (o && o.length);
 }
 console.log("as000 234 2135123dw0213j".match(/[013]/gi));
+
+// #34
+function removeSmallest(numbers) {
+  if (numbers.length == 0) {
+    return [];
+  } else {
+    let numIndex = numbers.indexOf(Math.min(...numbers));
+    let newNumbers = [...numbers];
+    let deleteEl = newNumbers.splice(numIndex, 1);
+    return newNumbers;
+  }
+}
+console.log(removeSmallest([5, 8, 9, 15, 4, 1, 3, 4, 1]));
+console.log(removeSmallest([6, 2, 6, 7, 8, 8, 8, 2, 3, 1]));
