@@ -353,3 +353,21 @@ console.log(betterThanAverage([1, 5, 6, 6, 7], 98));
 function greet(name) {
   return `Hello, ${name} how are you doing today?`;
 }
+
+// #29
+function validatePIN(pin) {
+  if (String(pin).length !== 4 && String(pin).length !== 6) {
+    return false;
+  }
+
+  const newPin = pin
+    .trim()
+    .split("")
+    .filter((el) => !Number.isNaN(Number(el)));
+
+  return (
+    Number.isInteger(Number(pin)) &&
+    !(newPin.length !== 4 && newPin.length !== 6)
+  );
+}
+console.log(validatePIN("67E104"));
