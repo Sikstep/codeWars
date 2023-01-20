@@ -395,8 +395,8 @@ function includesinStrr(str) {
 }
 
 console.log(includesinStrr("Lol if i wont be Yyyii a bad lost my soul"));
-// #30
 
+// #30
 function fakeBin(x) {
   return x
     .split("")
@@ -404,3 +404,9 @@ function fakeBin(x) {
     .join("");
 }
 console.log(fakeBin("5513125123123"));
+
+// #31
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump - mpg * fuelLeft <= 0;
+};
+console.log(zeroFuel(100, 50, 2.5));
