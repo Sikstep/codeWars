@@ -395,3 +395,12 @@ function includesinStrr(str) {
 }
 
 console.log(includesinStrr("Lol if i wont be Yyyii a bad lost my soul"));
+// #30
+
+function fakeBin(x) {
+  return x
+    .split("")
+    .map((a) => (Number(a) < 5 ? 0 : 1))
+    .join("");
+}
+console.log(fakeBin("5513125123123"));
