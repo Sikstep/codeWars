@@ -315,3 +315,36 @@ console.log(
 // }
 let boolArr = [true, true, false, false, true];
 console.log(boolArr.filter(Boolean));
+
+// #25
+function findAverage(array) {
+  return array.length === 0
+    ? 0
+    : array.reduce((a, b) => a + b, 0) / array.length;
+}
+console.log(findAverage([]));
+
+// #26
+function digitize(n) {
+  return n
+    .toFixed()
+    .split("")
+    .reverse()
+    .map((a) => +a);
+}
+console.log(digitize(35231));
+
+// best solution
+function digitize(n) {
+  return String(n).split("").reverse().map(Number);
+}
+console.log(digitize(35231));
+
+// #27
+function betterThanAverage(classPoints, yourPoints) {
+  classPoints.push(yourPoints);
+  return (
+    classPoints.reduce((a, b) => a + b, 0) / classPoints.length < yourPoints
+  );
+}
+console.log(betterThanAverage([1, 5, 6, 6, 7], 98));
