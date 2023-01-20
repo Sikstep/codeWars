@@ -370,4 +370,28 @@ function validatePIN(pin) {
     !(newPin.length !== 4 && newPin.length !== 6)
   );
 }
-console.log(validatePIN("67E104"));
+console.log(validatePIN("67-104"));
+
+function includesinStr(str) {
+  let glasnie = ["a", "e", "i", "y", "u", "o"];
+  let count = 0;
+  for (let key of str.toLowerCase().split("")) {
+    if (glasnie.includes(key)) {
+      count += 1;
+    }
+  }
+  return count;
+}
+
+console.log(includesinStr("Lol if i wont be YyyyYY iIii a bad lost my soul"));
+
+function includesinStrr(str) {
+  let glasnie = ["a", "e", "i", "y", "u", "o"];
+
+  return str
+    .toLowerCase()
+    .split("")
+    .filter((a) => glasnie.includes(a)).length;
+}
+
+console.log(includesinStrr("Lol if i wont be Yyyii a bad lost my soul"));
