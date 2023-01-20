@@ -416,3 +416,24 @@ function boolToWord(bool) {
   return bool ? "Yes" : "No";
 }
 console.log(true);
+
+// #33
+function XO(str) {
+  if (str.match(/[xo]/gi) == null) {
+    return true;
+  } else if (str.match(/[o]/gi) == null || str.match(/[x]/gi) == null) {
+    return false;
+  } else if (str.match(/[x]/gi).length == str.match(/[o]/gi).length) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(XO("asdxxxoooooofwadw"));
+
+// best solution
+function XOo(str) {
+  let x = str.match(/x/gi);
+  let o = str.match(/o/gi);
+  return (x && x.length) === (o && o.length);
+}
