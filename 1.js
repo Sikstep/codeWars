@@ -348,3 +348,8 @@ function betterThanAverage(classPoints, yourPoints) {
   );
 }
 console.log(betterThanAverage([1, 5, 6, 6, 7], 98));
+
+// #28
+function greet(name) {
+  return `Hello, ${name} how are you doing today?`;
+}
