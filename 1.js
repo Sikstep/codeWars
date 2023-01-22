@@ -507,3 +507,32 @@ console.log(
 
 const number1 = (busStops) =>
   busStops.reduce((rem, [on, off]) => rem + on - off, 0);
+
+// #39
+
+function getSum(a, b) {
+  let total = 0;
+  if (a > b) {
+    total = b;
+    for (let i = b; i < a; i++) {
+      total += i + 1;
+    }
+    return total;
+  } else if (a == b) {
+    return a;
+  } else {
+    total = a;
+    for (let i = a; i < b; i++) {
+      total += i + 1;
+    }
+    return total;
+  }
+}
+console.log(getSum(2, 2));
+
+// best solution
+const GetSum = (a, b) => {
+  let min = Math.min(a, b),
+    max = Math.max(a, b);
+  return ((max - min + 1) * (min + max)) / 2;
+};
