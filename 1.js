@@ -479,3 +479,31 @@ function angle(n) {
 console.log(angle(3));
 console.log(angle(4));
 console.log(angle(5));
+
+// #38
+var number = function (busStops) {
+  let total = 0;
+  for (let key of busStops) {
+    if (Array.isArray(key)) {
+      total += key[0];
+      total -= key[1];
+    }
+  }
+  return total;
+};
+
+console.log(
+  number([
+    [3, 0],
+    [9, 1],
+    [4, 10],
+    [12, 2],
+    [6, 1],
+    [7, 10],
+  ])
+);
+
+// best solution:
+
+const number1 = (busStops) =>
+  busStops.reduce((rem, [on, off]) => rem + on - off, 0);
