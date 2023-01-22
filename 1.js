@@ -461,3 +461,13 @@ console.log(mango(32, 72));
 console.log(1584 / 72);
 console.log(1512 / 72);
 console.log(Math.floor(32 / 3) * 2 * 72);
+
+// #35
+const quarterOf = (month) => {
+  return Math.ceil(month / 3);
+};
+
+//  #36
+function _if(bool, func1, func2) {
+  return bool ? console.log(func1()) : console.log(func2());
+}
