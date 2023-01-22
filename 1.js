@@ -471,3 +471,11 @@ const quarterOf = (month) => {
 function _if(bool, func1, func2) {
   return bool ? console.log(func1()) : console.log(func2());
 }
+
+// №37
+function angle(n) {
+  return 180 * (n - 2);
+}
+console.log(angle(3));
+console.log(angle(4));
+console.log(angle(5));
