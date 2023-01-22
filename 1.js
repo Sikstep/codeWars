@@ -452,3 +452,12 @@ function removeSmallest(numbers) {
 }
 console.log(removeSmallest([5, 8, 9, 15, 4, 1, 3, 4, 1]));
 console.log(removeSmallest([6, 2, 6, 7, 8, 8, 8, 2, 3, 1]));
+
+// #35
+function mango(quantity, price) {
+  return (quantity - Math.floor(quantity / 3)) * price;
+}
+console.log(mango(32, 72));
+console.log(1584 / 72);
+console.log(1512 / 72);
+console.log(Math.floor(32 / 3) * 2 * 72);
