@@ -536,3 +536,19 @@ const GetSum = (a, b) => {
     max = Math.max(a, b);
   return ((max - min + 1) * (min + max)) / 2;
 };
+
+// #40 Вернуть все согласные на англ. языке со строки
+function consonantCount(str) {
+  return str.match(/[qwrtypsdfghjklzxcvbnm]/gi) == null
+    ? 0
+    : str.match(/[qwrtypsdfghjklzxcvbnm]/gi).length;
+}
+console.log(
+  consonantCount(
+    "They1w1&123//./`$% need more money i think. Or let do some crime, and we can get bank?"
+  )
+);
+console.log(consonantCount("h^$&^#$&^elLo world"));
+console.log(consonantCount("0123456789"));
+console.log(consonantCount(""));
+console.log("0123456789".match(/[qwrtypsdfghjklzxcvbnm]/gi));
