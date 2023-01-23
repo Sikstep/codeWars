@@ -552,3 +552,5 @@ console.log(consonantCount("h^$&^#$&^elLo world"));
 console.log(consonantCount("0123456789"));
 console.log(consonantCount(""));
 console.log("0123456789".match(/[qwrtypsdfghjklzxcvbnm]/gi));
+
+console.log(consonantCount());
