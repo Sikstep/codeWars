@@ -554,3 +554,135 @@ console.log(consonantCount(""));
 console.log("0123456789".match(/[qwrtypsdfghjklzxcvbnm]/gi));
 
 console.log(consonantCount());
+
+// #40
+
+function gooseFilter(birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+
+  let result = [];
+  for (let key of birds) {
+    if (!geese.includes(key)) {
+      result.push(key);
+    } else {
+      continue;
+    }
+  }
+  return result;
+}
+console.log(
+  gooseFilter([
+    "Mallard",
+    "Hook Bill",
+    "African",
+    "Crested",
+    "Pilgrim",
+    "Toulouse",
+    "Blue Swedish",
+  ])
+);
+
+// best solution
+function gooseFilterr(birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter((b) => !geese.includes(b));
+}
+
+// #41
+function howManyLightsabersDoYouOwn(name) {
+  return arguments.length != 0 &&
+    name !== "" &&
+    name.length == 4 &&
+    name.includes("Zach")
+    ? 18
+    : 0;
+}
+
+console.log(howManyLightsabersDoYouOwn("Zach"));
+
+// best solution;
+
+function howManyLightsabersDoYouOwn1(name) {
+  return name === "Zach" ? 18 : 0;
+}
+
+// #42
+function barTriang(p1, p2, p3) {
+  let a = (p1[0] + p2[0] + p3[0]) / 3;
+  let b = (p1[1] + p2[1] + p3[1]) / 3;
+  return [+a.toFixed(4), +b.toFixed(4)];
+}
+
+console.log(barTriang([4, 6], [12, 4], [10, 10]));
+console.log(barTriang([0, 0], [1, 3], [-1, 6]));
+
+// #43
+function positiveSum(arr) {
+  return arr.filter((el) => el >= 0).reduce((total, el) => total + el, 0);
+}
+
+console.log(positiveSum([1, 2, 3, 4, 5]));
+console.log(positiveSum([1, -2, 3, 4, 5]));
+console.log(positiveSum([-1, -2, -3, -4, -5]));
+
+// #44
+function makeNegative(num) {
+  return num <= 0 ? num : (num *= -1);
+}
+console.log();
+console.log(("b" + "a" + +"a" + "a").toLowerCase());
+// #45
+function removeChar(str) {
+  return str.split("").splice([1], [str.length - 2]);
+}
+
+console.log(removeChar("eloquent"));
+
+//  best solution
+function removeCharr(str) {
+  return str.slice(1, -1);
+}
+
+// #46
+var summation = function (num) {
+  counter = 0;
+  for (let i = 1; i <= num; i++) {
+    counter += i;
+  }
+  return counter;
+};
+
+console.log(summation(1));
+console.log(summation(2));
+console.log(summation(8));
+
+// #46
+
+function noSpace(x) {
+  return x
+    .split("")
+    .filter((el) => el !== " ")
+    .join("");
+}
+console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"));
+
+// best solution:
+
+function noSpace1(x) {
+  return x.replace(/\s/g, "");
+}
+
+// #47
+function abbrevName(name) {
+  return name
+    .split(" ")
+    .map((el) => el.split("").slice(0, 1))
+    .join(".")
+    .toUpperCase();
+  // code away
+}
+console.log(abbrevName("Sam Harris"));
+console.log(abbrevName("Patrick Feenan"));
+console.log(abbrevName("Evan Cole"));
+console.log(abbrevName("P Favuzzi"));
+console.log(abbrevName("David Mendieta"));
