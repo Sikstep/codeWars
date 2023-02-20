@@ -682,7 +682,10 @@ function abbrevName(name) {
   // code away
 }
 console.log(abbrevName("Sam Harris"));
-console.log(abbrevName("Patrick Feenan"));
-console.log(abbrevName("Evan Cole"));
-console.log(abbrevName("P Favuzzi"));
-console.log(abbrevName("David Mendieta"));
+
+// #48
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0;
+}
+
+console.log(isDivisible(3, 1, 3));
