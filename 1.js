@@ -689,3 +689,62 @@ function isDivisible(n, x, y) {
 }
 
 console.log(isDivisible(3, 1, 3));
+
+function descendingOrder(n) {
+  return Number(
+    String(n)
+      .split("")
+      .sort((a, b) => b - a)
+      .join("")
+  );
+}
+
+// расскоментировать лог для проверки.
+// console.log(descendingOrder(214545));
+//expected: 554421
+console.log(descendingOrder(214545));
+
+// 2. Написать функцию, которая принимает строку и возвращает
+// центральную букву этой строки, если длинна строки нечетное число,
+// если же длинна строки четное число, вернуть две центральные буквы
+
+function getMiddle(s) {
+  return s.length % 2 === 0
+    ? s[s.length / 2 - 1] + s[s.length / 2]
+    : s[Math.floor(s.length / 2)];
+}
+
+// расскоментировать логи для проверки.
+
+console.log(getMiddle("Test")); // expected: middle letter 'es'
+console.log(getMiddle("Testing")); // expected: middle letter 't'
+console.log(getMiddle("A")); // expected: middle letter 'A'
+console.log(getMiddle("LKJlkfjafdkfjd")); // expected: middle letter 'A'
+
+// 3. Напишите функцию, которая на входе принимает массив чисел
+// среди которых лишь одно "число-предатель"
+// оно либо четное, либо нет, найти предателя и вернуть его.
+
+function findOutlier(integers) {
+  let chet = integers.filter((el) => el % 2 === 0).length;
+  let nechet = integers.filter((el) => el % 2 !== 0).length;
+  return chet > nechet
+    ? integers.filter((el) => el % 2 !== 0)
+    : integers.filter((el) => el % 2 === 0);
+}
+
+console.log(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]));
+console.log(findOutlier([23, 5, 5, 100, 5, 11, 25, 37]));
+// expected: 11
+
+// 4. Написать функцию, которая принимает два массива чисел a и b
+// сравнивает два массива и возвращает новый массив с числами из массива a
+// которых нет в массиве b.
+
+function arrayDiff(a, b) {
+  return a.filter((el) => !b.includes(el));
+}
+
+// расскоментировать логи для проверки.
+
+console.log(arrayDiff([1, 2, 2, 2, 3, 6, 4, 3, 7], [1, 2]));
