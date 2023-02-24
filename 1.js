@@ -748,3 +748,12 @@ function arrayDiff(a, b) {
 // расскоментировать логи для проверки.
 
 console.log(arrayDiff([1, 2, 2, 2, 3, 6, 4, 3, 7], [1, 2]));
+
+// Из строки чисел вернуть наибольшее и наименьшее значение
+
+function highAndLow(str) {
+  number = str.split(" ").map(Number);
+  return `${Math.min(...number)} ${Math.max(...number)}`;
+}
+
+console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")); // , "42 -9"
