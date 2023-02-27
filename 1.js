@@ -805,3 +805,37 @@ function arrayPlusArray(arr1, arr2) {
 }
 
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+
+// 6kyu сложение кратное 3 и 5.
+function solution(number) {
+  arr = [];
+  if (number <= 3) {
+    return 0;
+  }
+  for (let i = 1; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        arr.push(i);
+      } else {
+        arr.push(i);
+      }
+    }
+  }
+  return arr.reduce((a, b) => a + b);
+}
+
+console.log(solution(1));
+
+// bestsolution
+function solution1(number) {
+  var sum = 0;
+
+  for (var i = 1; i < number; i++) {
+    if (i % 3 == 0 || i % 5 == 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+
+console.log(solution1(1));
