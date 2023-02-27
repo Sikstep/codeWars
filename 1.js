@@ -757,3 +757,33 @@ function highAndLow(str) {
 }
 
 console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")); // , "42 -9"
+
+let numbers = "8 3 -5 42 -1 0 0 -9 4 7 4 -4";
+
+let newarr1 = numbers.split(" ").map(Number);
+console.log(...newarr1);
+
+let s = "!hellow !world!";
+function removeExclamationMarks(s) {
+  // return s.split('').filter((el) => el !== '!').join('');
+  return s.replace(/!/gi, "");
+}
+
+console.log(removeExclamationMarks("!hellow !world!"));
+/*console.log(removeExclamationMarks(s));*/
+
+let arr = ["Keep", "Remove", "Keep", "Remove", "Keep"];
+
+function removeEveryOther(arr) {
+  return arr.filter((el, index) => index % 2 === 0);
+}
+
+console.log(removeEveryOther(arr));
+
+let str = "apple ban";
+
+function addLength(str) {
+  return str.split(" ").map((el) => `${el} ${el.length}`);
+}
+
+console.log(addLength(str));
