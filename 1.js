@@ -787,3 +787,21 @@ function addLength(str) {
 }
 
 console.log(addLength(str));
+
+function getAverage(marks) {
+  return Math.floor(marks.reduce((a, b) => a + b) / marks.length);
+}
+console.log(getAverage([2, 2, 2, 2]));
+console.log(getAverage([1, 2, 3, 4, 5]));
+
+function multipleOfIndex(array) {
+  return array.filter((el, index) => el % index === 0);
+}
+
+console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]));
+
+function arrayPlusArray(arr1, arr2) {
+  return [...arr1, ...arr2].reduce((a, b) => a + b);
+}
+
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
