@@ -839,3 +839,26 @@ function solution1(number) {
 }
 
 console.log(solution1(1));
+
+// Рекурсия
+
+function countDown(n) {
+  let res = [];
+
+  for (let i = n; i >= 0; i--) {
+    res.push(i);
+  }
+  return res;
+}
+
+console.log(countDown(3));
+
+function countDownRecursia(n) {
+  if (n == 0) {
+    return "0";
+  } else {
+    return countDownRecursia(n - 1);
+  }
+}
+
+console.log(countDownRecursia(3));
