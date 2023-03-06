@@ -862,3 +862,21 @@ function countDownRecursia(n) {
 }
 
 console.log(countDownRecursia(3));
+
+// Поиск простых чисел в значениях предшествующих числу аргумента (т.е. если цифра делится без остатка только на себя или на 1
+//   то она простая, например у числа 10 будут цифры 2, 3, 5, 7)
+function findNumber(num) {
+  let arr = [];
+  for (let i = 1; i <= num; i++) {
+    for (let j = 2; j <= i; j++) {
+      if (i % j === 0 && j < i) {
+        break;
+      } else if (j === i) {
+        arr.push(i);
+      }
+    }
+  }
+  return arr;
+}
+
+console.log(findNumber(10));
