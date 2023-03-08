@@ -880,3 +880,29 @@ function findNumber(num) {
 }
 
 console.log(findNumber(10));
+
+// #51
+function lovefunc(flower1, flower2) {
+  return flower1 % 2 === 0 && flower2 % 2 !== 0
+    ? true
+    : flower1 % 2 !== 0 && flower2 % 2 === 0
+    ? true
+    : false;
+}
+
+console.log(lovefunc(1, 4));
+
+// best solution:
+
+function lovefunc(flower1, flower2) {
+  return flower1 % 2 !== flower2 % 2;
+}
+
+// #52
+function areYouPlayingBanjo(name) {
+  return name.toLowerCase().indexOf("r") === 0
+    ? `${name} plays banjo`
+    : `${name} does not play banjo`;
+}
+
+console.log(areYouPlayingBanjo("Kosty"));
