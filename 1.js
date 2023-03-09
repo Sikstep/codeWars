@@ -690,219 +690,23 @@ function isDivisible(n, x, y) {
 
 console.log(isDivisible(3, 1, 3));
 
-function descendingOrder(n) {
-  return Number(
-    String(n)
-      .split("")
-      .sort((a, b) => b - a)
-      .join("")
-  );
+// #55
+function check(a, x) {
+  return a.includes(x);
 }
 
-// расскоментировать лог для проверки.
-// console.log(descendingOrder(214545));
-//expected: 554421
-console.log(descendingOrder(214545));
+console.log(check([66, 101], 66));
+console.log(check([101, 45, 75, 105, 99, 107], 107));
+console.log(check(["t", "e", "s", "t"], "e"));
+console.log(check(["what", "a", "great", "kata"], "kat"));
 
-// 2. Написать функцию, которая принимает строку и возвращает
-// центральную букву этой строки, если длинна строки нечетное число,
-// если же длинна строки четное число, вернуть две центральные буквы
+function bmi(weight, height) {
+  let result = weight / height ** 2;
 
-function getMiddle(s) {
-  return s.length % 2 === 0
-    ? s[s.length / 2 - 1] + s[s.length / 2]
-    : s[Math.floor(s.length / 2)];
+  if (result <= 18.5) return `Underweight`;
+  if (result <= 25) return `Normal`;
+  if (result <= 30) return `Overweight`;
+  if (result > 30) return `Obese`;
 }
 
-// расскоментировать логи для проверки.
-
-console.log(getMiddle("Test")); // expected: middle letter 'es'
-console.log(getMiddle("Testing")); // expected: middle letter 't'
-console.log(getMiddle("A")); // expected: middle letter 'A'
-console.log(getMiddle("LKJlkfjafdkfjd")); // expected: middle letter 'A'
-
-// 3. Напишите функцию, которая на входе принимает массив чисел
-// среди которых лишь одно "число-предатель"
-// оно либо четное, либо нет, найти предателя и вернуть его.
-
-function findOutlier(integers) {
-  let chet = integers.filter((el) => el % 2 === 0).length;
-  let nechet = integers.filter((el) => el % 2 !== 0).length;
-  return chet > nechet
-    ? integers.filter((el) => el % 2 !== 0)
-    : integers.filter((el) => el % 2 === 0);
-}
-
-console.log(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]));
-console.log(findOutlier([23, 5, 5, 100, 5, 11, 25, 37]));
-// expected: 11
-
-// 4. Написать функцию, которая принимает два массива чисел a и b
-// сравнивает два массива и возвращает новый массив с числами из массива a
-// которых нет в массиве b.
-
-function arrayDiff(a, b) {
-  return a.filter((el) => !b.includes(el));
-}
-
-// расскоментировать логи для проверки.
-
-console.log(arrayDiff([1, 2, 2, 2, 3, 6, 4, 3, 7], [1, 2]));
-
-// Из строки чисел вернуть наибольшее и наименьшее значение
-
-function highAndLow(str) {
-  number = str.split(" ").map(Number);
-  return `${Math.min(...number)} ${Math.max(...number)}`;
-}
-
-console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")); // , "42 -9"
-
-let numbers = "8 3 -5 42 -1 0 0 -9 4 7 4 -4";
-
-let newarr1 = numbers.split(" ").map(Number);
-console.log(...newarr1);
-
-let s = "!hellow !world!";
-function removeExclamationMarks(s) {
-  // return s.split('').filter((el) => el !== '!').join('');
-  return s.replace(/!/gi, "");
-}
-
-console.log(removeExclamationMarks("!hellow !world!"));
-/*console.log(removeExclamationMarks(s));*/
-
-let arr = ["Keep", "Remove", "Keep", "Remove", "Keep"];
-
-function removeEveryOther(arr) {
-  return arr.filter((el, index) => index % 2 === 0);
-}
-
-console.log(removeEveryOther(arr));
-
-let str = "apple ban";
-
-function addLength(str) {
-  return str.split(" ").map((el) => `${el} ${el.length}`);
-}
-
-console.log(addLength(str));
-
-function getAverage(marks) {
-  return Math.floor(marks.reduce((a, b) => a + b) / marks.length);
-}
-console.log(getAverage([2, 2, 2, 2]));
-console.log(getAverage([1, 2, 3, 4, 5]));
-
-function multipleOfIndex(array) {
-  return array.filter((el, index) => el % index === 0);
-}
-
-console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]));
-
-function arrayPlusArray(arr1, arr2) {
-  return [...arr1, ...arr2].reduce((a, b) => a + b);
-}
-
-console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
-
-// 6kyu сложение кратное 3 и 5.
-function solution(number) {
-  arr = [];
-  if (number <= 3) {
-    return 0;
-  }
-  for (let i = 1; i < number; i++) {
-    if (i % 3 === 0 || i % 5 === 0) {
-      if (i % 3 === 0 && i % 5 === 0) {
-        arr.push(i);
-      } else {
-        arr.push(i);
-      }
-    }
-  }
-  return arr.reduce((a, b) => a + b);
-}
-
-console.log(solution(1));
-
-// bestsolution
-function solution1(number) {
-  var sum = 0;
-
-  for (var i = 1; i < number; i++) {
-    if (i % 3 == 0 || i % 5 == 0) {
-      sum += i;
-    }
-  }
-  return sum;
-}
-
-console.log(solution1(1));
-
-// Рекурсия
-
-function countDown(n) {
-  let res = [];
-
-  for (let i = n; i >= 0; i--) {
-    res.push(i);
-  }
-  return res;
-}
-
-console.log(countDown(3));
-
-function countDownRecursia(n) {
-  if (n == 0) {
-    return "0";
-  } else {
-    return countDownRecursia(n - 1);
-  }
-}
-
-console.log(countDownRecursia(3));
-
-// Поиск простых чисел в значениях предшествующих числу аргумента (т.е. если цифра делится без остатка только на себя или на 1
-//   то она простая, например у числа 10 будут цифры 2, 3, 5, 7)
-function findNumber(num) {
-  let arr = [];
-  for (let i = 1; i <= num; i++) {
-    for (let j = 2; j <= i; j++) {
-      if (i % j === 0 && j < i) {
-        break;
-      } else if (j === i) {
-        arr.push(i);
-      }
-    }
-  }
-  return arr;
-}
-
-console.log(findNumber(10));
-
-// #51
-function lovefunc(flower1, flower2) {
-  return flower1 % 2 === 0 && flower2 % 2 !== 0
-    ? true
-    : flower1 % 2 !== 0 && flower2 % 2 === 0
-    ? true
-    : false;
-}
-
-console.log(lovefunc(1, 4));
-
-// best solution:
-
-function lovefunc(flower1, flower2) {
-  return flower1 % 2 !== flower2 % 2;
-}
-
-// #52
-function areYouPlayingBanjo(name) {
-  return name.toLowerCase().indexOf("r") === 0
-    ? `${name} plays banjo`
-    : `${name} does not play banjo`;
-}
-
-console.log(areYouPlayingBanjo("Kosty"));
+console.log(bmi(80, 1.8));
