@@ -710,3 +710,15 @@ function bmi(weight, height) {
 }
 
 console.log(bmi(80, 1.8));
+
+// #56
+var countSheep = function (num) {
+  let str = "";
+  for (let i = 1; i <= num; i++) {
+    str += `${i} sheep...`;
+  }
+  return str;
+};
+
+console.log(countSheep(0));
+console.log(countSheep(1));
