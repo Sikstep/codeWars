@@ -722,3 +722,40 @@ var countSheep = function (num) {
 
 console.log(countSheep(0));
 console.log(countSheep(1));
+// #Камень ножницы бумага!
+const rps = (p1, p2) => {
+  let r = "rock",
+    p = "paper",
+    s = "scissors";
+  if (p1 === p2) return "Draw!";
+  if (p1 === r && p2 === s) {
+    return "Player 1 won!";
+  }
+  if (p1 === r && p2 === p) {
+    return "Player 2 won!";
+  }
+  if (p1 === p && p2 === r) {
+    return "Player 1 won!";
+  }
+  if (p1 === p && p2 === s) {
+    return "Player 2 won!";
+  }
+  if (p1 === s && p2 === p) {
+    return "Player 1 won!";
+  }
+  if (p1 === s && p2 === r) {
+    return "Player 2 won!";
+  }
+};
+
+console.log(rps("rock", "scissors"));
+// best solution
+const rps1 = (p1, p2) => {
+  if (p1 === p2) return "Draw!";
+  var rules = { rock: "scissors", paper: "rock", scissors: "paper" };
+  if (p2 === rules[p1]) {
+    return "Player 1 won!";
+  } else {
+    return "Player 2 won!";
+  }
+};
