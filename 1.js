@@ -782,3 +782,10 @@ const getMutualFriends = (st_1, st_2) => {
   );
   return result;
 };
+
+// #57
+function sumArray(array) {
+  if (array === null || array === undefined || array.length <= 2) return 0;
+  let newArr = array.sort((a, b) => a - b).slice(1, array.length - 1);
+  return newArr.reduce((total, el) => total + el, 0);
+}
