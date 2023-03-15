@@ -790,3 +790,17 @@ function sumArray(array) {
   return newArr.reduce((total, el) => total + el, 0);
 }
 console.log(sumArray([0, 1, 6, 10, 10]));
+
+// #58 reduce задачка на подсчёт очков в матче
+function points(games) {
+  let newArr = games.map((el) => el.split(":"));
+  return newArr.reduce(
+    (total, el) =>
+      el[0] > el[1] ? total + 3 : el[0] == el[1] ? total + 1 : total + 0,
+    0
+  );
+}
+
+console.log(
+  points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"])
+);
