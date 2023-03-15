@@ -759,3 +759,26 @@ const rps1 = (p1, p2) => {
     return "Player 2 won!";
   }
 };
+
+// #поиск в массиве и включение в другой массив результата
+export const students = [
+  { id: 1, name: "Bob" },
+  { id: 2, name: "Alex" },
+  { id: 3, name: "Ann" },
+  { id: 4, name: "Charley" },
+];
+
+export const friends = {
+  1: ["Oliver", "Jack", "Oscar"],
+  2: ["Jack", "Lewis", "Thomas"],
+  3: ["William", "Michael", "Lewis"],
+  4: ["Oscar", "James", "William"],
+};
+
+const getMutualFriends = (st_1, st_2) => {
+  const result = [];
+  friends[st_1.id].forEach((f) =>
+    friends[st_2.id].includes(f) ? result.push(f) : null
+  );
+  return result;
+};
