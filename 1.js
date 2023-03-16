@@ -804,3 +804,13 @@ function points(games) {
 console.log(
   points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"])
 );
+// #59
+function monkeyCount(n) {
+  let numbers = [];
+  for (let i = 1; i <= n; i++) {
+    numbers.push(i);
+  }
+  return numbers;
+}
+
+console.log(monkeyCount(10));
