@@ -827,3 +827,11 @@ function getGrade(s1, s2, s3) {
 }
 
 console.log(getGrade(95, 90, 93));
+
+// #61
+
+function bonusTime(salary, bonus) {
+  return bonus ? `£${salary * 10}` : `£${salary}`;
+}
+
+console.log(bonusTime(10000, true));
