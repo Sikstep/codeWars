@@ -835,3 +835,12 @@ function bonusTime(salary, bonus) {
 }
 
 console.log(bonusTime(10000, true));
+
+// #62
+
+const areaOrPerimeter = function (l, w) {
+  return l === w ? l ** 2 : (l + w) * 2;
+};
+
+console.log(areaOrPerimeter(3, 3));
+console.log(areaOrPerimeter(6, 10));
