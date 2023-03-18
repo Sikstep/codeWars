@@ -844,3 +844,12 @@ const areaOrPerimeter = function (l, w) {
 
 console.log(areaOrPerimeter(3, 3));
 console.log(areaOrPerimeter(6, 10));
+
+// №63
+
+function greet(name, owner) {
+  return name == owner ? "Hello boss" : "Hello guest";
+}
+
+console.log(greet("Daniel", "Daniel"));
+console.log(greet("Greg", "Daniel"));
