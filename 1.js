@@ -853,3 +853,11 @@ function greet(name, owner) {
 
 console.log(greet("Daniel", "Daniel"));
 console.log(greet("Greg", "Daniel"));
+
+// #64
+
+function removeExclamationMarks(s) {
+  return s.replace(/!/gi, "");
+}
+
+console.log(removeExclamationMarks("Hello!!!! World!"));
