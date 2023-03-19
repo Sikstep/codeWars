@@ -861,3 +861,18 @@ function removeExclamationMarks(s) {
 }
 
 console.log(removeExclamationMarks("Hello!!!! World!"));
+
+function rentalCarCost(d) {
+  total = d * 40;
+  switch (true) {
+    case d >= 3 && d < 7:
+      return total - 20;
+    case d >= 7:
+      return total - 50;
+
+    default:
+      return total;
+  }
+}
+
+console.log(rentalCarCost(1));
