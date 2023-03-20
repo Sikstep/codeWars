@@ -877,6 +877,7 @@ function rentalCarCost(d) {
 
 console.log(rentalCarCost(1));
 
+// #65
 function feast(beast, dish) {
   const a = `${beast[0]}${beast[beast.length - 1]}`;
   const b = `${dish[0]}${dish[dish.length - 1]}`;
@@ -884,3 +885,14 @@ function feast(beast, dish) {
 }
 
 console.log(feast("great blue heron", "garlic naan"));
+
+// #66
+function updateLight(current) {
+  return current === "green"
+    ? "yellow"
+    : current === "yellow"
+    ? "red"
+    : "green";
+}
+
+console.log(updateLight("green"));
