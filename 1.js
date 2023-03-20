@@ -896,3 +896,143 @@ function updateLight(current) {
 }
 
 console.log(updateLight("green"));
+
+// # рекурсия
+// сама задача через цикл
+function pow(x, n) {
+  let result = 1;
+  // умножаем result на x n раз в цикле
+  for (let i = 0; i < n; i++) {
+    result *= x;
+  }
+  return result;
+}
+console.log(pow(2, 3)); //8
+
+function pow1(x, n) {
+  if (n != 1) {
+    return x * pow(x, n - 1);
+  } else {
+    return x;
+  }
+}
+
+console.log(pow1(2, 3));
+
+function pow2(x, n) {
+  return n == 1 ? x : x * pow(x, n - 1);
+}
+console.log(pow2(2, 3));
+
+// Рекурсия факториал
+
+function factorial(a) {
+  let res = 1;
+  for (let i = 1; i <= a; i++) {
+    res = res * i;
+  }
+  return res;
+}
+
+console.log(factorial(5));
+
+function fuctorial1(a) {
+  return a == 1 ? a : a * fuctorial1(a - 1);
+}
+
+console.log(fuctorial1(5));
+
+// Рекурсия фибоначи
+
+function fionachiForI(n) {
+  const result = [0, 1];
+
+  for (let i = 2; i <= n; i++) {
+    const a = result[i - 1];
+    const b = result[i - 2];
+    result.push(a + b);
+  }
+
+  return result;
+}
+
+console.log(fionachiForI(8));
+
+function fibonachi(n) {
+  return n <= 1 ? n : fibonachi(n - 2) + fibonachi(n - 1);
+}
+
+console.log(fibonachi(10));
+
+let count = 0;
+
+function fib(n) {
+  count++;
+  console.log("count", count, "n-", n);
+
+  if (n < 2) {
+    return n;
+  }
+  const a = fib(n - 1);
+  const b = fib(n - 2);
+  console.log("a+b", a + b);
+  return a + b;
+}
+
+console.log("fib-", fib(5)); //2
+
+function fibonacci2(n) {
+  if (n <= 2) {
+    return [1, 1];
+  }
+  const res = fibonacci2(n - 1);
+  res.push(res[res.length - 1] + res[res.length - 2]);
+  return res;
+}
+console.log(fibonacci2(10));
+
+let list = {
+  value: 1,
+  next: {
+    value: 2,
+    next: {
+      value: 3,
+      next: {
+        value: 4,
+        next: null,
+      },
+    },
+  },
+};
+
+function logListWhile(list) {
+  while (list) {
+    console.log(list.value);
+    list = list.next;
+  }
+}
+
+console.log(logListWhile(list));
+
+function logListRecursia(list) {
+  if (list.next === null) {
+    console.log(list.value);
+    return;
+  }
+  console.log(list.value);
+  logListRecursia(list.next);
+}
+
+console.log(logListRecursia(list));
+
+console.log(list.value);
+
+function test(list) {
+  console.log(list.value);
+
+  if (list.next) {
+    test(list.next);
+  }
+}
+
+console.log(test(list));
