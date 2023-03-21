@@ -1043,3 +1043,13 @@ function setAlarm(employed, vacation) {
 }
 
 console.log(setAlarm(true, true));
+
+// #68 map
+
+function doubleChar(str) {
+  return str
+    .split("")
+    .map((el) => `${el}${el}`)
+    .join("");
+}
+console.log(doubleChar("abcd"));
