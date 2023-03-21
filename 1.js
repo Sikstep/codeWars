@@ -1036,3 +1036,10 @@ function test(list) {
 }
 
 console.log(test(list));
+
+// #67
+function setAlarm(employed, vacation) {
+  return employed && !vacation;
+}
+
+console.log(setAlarm(true, true));
