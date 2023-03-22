@@ -1053,3 +1053,16 @@ function doubleChar(str) {
     .join("");
 }
 console.log(doubleChar("abcd"));
+
+// #69
+function firstNonConsecutive(arr) {
+  let count = 0;
+  let total = [];
+  for (let i = 0; i < arr.length - 1; i++) {
+    let index1 = arr[i] + 1;
+    let nextIndex = arr[i + 1];
+    index1 !== nextIndex ? total.push(nextIndex) : count++;
+  }
+
+  return count === arr.length - 1 ? null : total;
+}
