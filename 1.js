@@ -1066,3 +1066,10 @@ function firstNonConsecutive(arr) {
 
   return count === arr.length - 1 ? null : total;
 }
+
+// #70
+function removeEveryOther(arr) {
+  return arr.filter((el, index) => index % 2 === 0);
+}
+
+console.log(removeEveryOther(["Hello", "Goodbye", "Hello Again"]));
