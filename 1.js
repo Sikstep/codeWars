@@ -1080,3 +1080,17 @@ function cockroachSpeed(s) {
 }
 
 console.log(cockroachSpeed(1.08));
+
+// #72
+
+function enough(cap, on, wait) {
+  return cap - on - wait >= 0 ? 0 : (cap - on - wait) * -1;
+}
+
+console.log(enough(10, 5, 5));
+
+// best solution
+
+function enough1(cap, on, wait) {
+  return Math.max(wait + on - cap, 0);
+}
