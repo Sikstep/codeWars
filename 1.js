@@ -1110,3 +1110,37 @@ function nearestSq(n) {
   return Math.round(Math.sqrt(n)) ** 2;
 }
 console.log(nearestSq(1));
+
+// #75 deepfind задача на глубокий поиск в объектах
+
+function deepFind(o, str, defaultValue) {
+  const keys = str.split(".");
+  let current = o;
+  while (keys.length > 0) {
+    const k = keys.shift();
+    if (k in current) {
+      current = current[k];
+    } else {
+      return defaultValue;
+    }
+  }
+  return current;
+}
+
+const obj = {
+  a: {
+    b: {
+      c: "d",
+    },
+    e: "f",
+  },
+  z: [{ a: "hello" }],
+};
+
+console.log(deepFind(obj, "a.b")); // { c : 'd' }
+console.log(deepFind(obj, "a.b.c")); // 'd'
+console.log(deepFind(obj, "a.e")); // 'f'
+console.log(deepFind(obj, "z.0.a")); // 'f'
+console.log(deepFind(obj, "a.x.e")); // undefined
+console.log(deepFind(obj, "a.x.e", true)); // true
+console.log(deepFind(obj, "a.x.e", "My default value")); //
