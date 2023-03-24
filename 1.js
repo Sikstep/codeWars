@@ -1097,7 +1097,16 @@ function enough1(cap, on, wait) {
 
 // #73
 function chromosomeCheck(sperm) {
-  return sperm.includes('Y') ? "Congratulations! You're going to have a son." : "Congratulations! You're going to have a daughter.";
+  return sperm.includes("Y")
+    ? "Congratulations! You're going to have a son."
+    : "Congratulations! You're going to have a daughter.";
 }
 
-console.log(chromosomeCheck('XY'));
+console.log(chromosomeCheck("XY"));
+
+// #74
+
+function nearestSq(n) {
+  return Math.round(Math.sqrt(n)) ** 2;
+}
+console.log(nearestSq(1));
