@@ -1144,3 +1144,22 @@ console.log(deepFind(obj, "z.0.a")); // 'f'
 console.log(deepFind(obj, "a.x.e")); // undefined
 console.log(deepFind(obj, "a.x.e", true)); // true
 console.log(deepFind(obj, "a.x.e", "My default value")); //
+
+// #76 task with bancnotes: Задача с банкоматом:
+const banknotes = [1000, 500, 100, 50, 20, 10, 5, 2, 1];
+
+export function getBanknoteList(amountOfMoney) {
+  let total = [];
+  for (let i = 0; i < banknotes.length; i++) {
+    if (amountOfMoney / banknotes[i] >= 1) {
+      for (let j = 0; j < amountOfMoney / banknotes[i]; j++) {
+        total.push(banknotes[i]);
+        amountOfMoney -= banknotes[i];
+      }
+    }
+  }
+  return total;
+}
+
+console.log(getBanknoteList(2500));
+console.log(getBanknoteList(23));
