@@ -1094,3 +1094,10 @@ console.log(enough(10, 5, 5));
 function enough1(cap, on, wait) {
   return Math.max(wait + on - cap, 0);
 }
+
+// #73
+function chromosomeCheck(sperm) {
+  return sperm.includes('Y') ? "Congratulations! You're going to have a son." : "Congratulations! You're going to have a daughter.";
+}
+
+console.log(chromosomeCheck('XY'));
