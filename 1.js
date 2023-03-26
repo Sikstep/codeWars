@@ -1172,3 +1172,19 @@ function hoopCount(n) {
 }
 
 console.log(hoopCount(3));
+
+// #78
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return sonYearsOld * 2 === dadYearsOld
+    ? 0
+    : sonYearsOld * 2 <= dadYearsOld
+    ? dadYearsOld - sonYearsOld * 2
+    : (dadYearsOld - sonYearsOld * 2) * -1;
+}
+console.log(twiceAsOld(36, 7));
+
+// best solution
+
+function twiceAsOld1(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
