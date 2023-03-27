@@ -1245,3 +1245,9 @@ function checkForFactor(base, factor) {
   return base % factor === 0;
 }
 console.log(checkForFactor(10, 2));
+
+// #81
+function getAge(inputString){
+  return +inputString[0];
+  }
+  
