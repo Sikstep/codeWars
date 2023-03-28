@@ -1295,3 +1295,18 @@ function switchItUp(number) {
 }
 
 console.log(switchItUp(1));
+
+// best solution
+switchItUp = (n) =>
+  [
+    "Zero",
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+  ][n];
