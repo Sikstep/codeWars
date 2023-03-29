@@ -1362,3 +1362,9 @@ function oddCount(n) {
   }
   return arrForN.length;
 }
+
+function oddCount1(n) {
+  return Math.floor(n / 2);
+}
+console.log(oddCount(5));
+console.log(oddCount1(5));
