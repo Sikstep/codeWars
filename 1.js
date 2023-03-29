@@ -1368,3 +1368,15 @@ function oddCount1(n) {
 }
 console.log(oddCount(5));
 console.log(oddCount1(5));
+
+// #87 this context Крутая задачка на this
+
+String.prototype.toAlternatingCase = function () {
+  return this.split("")
+    .map((el) =>
+      el === el.toLowerCase() ? el.toUpperCase() : el.toLowerCase()
+    )
+    .join("");
+};
+
+console.log("hello world".toAlternatingCase());
