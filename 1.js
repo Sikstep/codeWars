@@ -1310,3 +1310,32 @@ switchItUp = (n) =>
     "Eight",
     "Nine",
   ][n];
+
+// #85
+
+var humanYearsCatYearsDogYears = function (humanYears) {
+  let catYears = 0;
+  let dogYears = 0;
+  let totalYears = [];
+  switch (true) {
+    case humanYears === 1:
+      catYears += 15;
+      dogYears += 15;
+      totalYears.push(humanYears, catYears, dogYears);
+      break;
+    case humanYears === 2:
+      catYears += 24;
+      dogYears += 24;
+      totalYears.push(humanYears, catYears, dogYears);
+      break;
+    default:
+      catYears = 24 + (humanYears - 2) * 4;
+      dogYears = 24 + (humanYears - 2) * 5;
+      totalYears.push(humanYears, catYears, dogYears);
+      break;
+  }
+
+  return totalYears;
+};
+
+console.log(humanYearsCatYearsDogYears(1));
