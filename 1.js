@@ -1388,3 +1388,19 @@ class Kata {
   }
 }
 console.log(Kata.getVolumeOfCuboid(1, 2, 2));
+
+// #89 задача с собеса на написание времени hh:mm:ss когда принимаем только секунды.
+function timeToHHMMSS(params) {
+  let hour = Math.floor(params / 3600);
+  let min = Math.floor((params - hour * 3600) / 60);
+  let sec = params - hour * 3600 - min * 60;
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  if (min < 10) {
+    min = `0${min}`;
+  }
+  return `${hour}:${min}:${sec}`;
+}
+
+console.log(timeToHHMMSS(95324));
