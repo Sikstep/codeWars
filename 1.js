@@ -1346,3 +1346,19 @@ var humanYearsCatYearsDogYears = function (y) {
   if (y == 2) return [2, 24, 24];
   return [y, (y - 2) * 4 + 24, (y - 2) * 5 + 24];
 };
+
+// #86
+function oddCount(n) {
+  let arrForN = [];
+
+  if (typeof n === "number" && n > 0) {
+    for (let i = 0; i < n; i++) {
+      if (i % 2 !== 0) {
+        arrForN.push(i);
+      }
+    }
+  } else {
+    return "Oops! Wrong.";
+  }
+  return arrForN.length;
+}
