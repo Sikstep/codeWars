@@ -1404,3 +1404,9 @@ function timeToHHMMSS(params) {
 }
 
 console.log(timeToHHMMSS(95324));
+
+// #90
+function divisibleBy(numbers, divisor) {
+  return numbers.filter((el) => el % divisor === 0);
+}
+console.log(divisibleBy([1, 2, 3, 4, 5, 6], 2));
