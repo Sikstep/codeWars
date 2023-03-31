@@ -1451,3 +1451,8 @@ function greet(language) {
 }
 
 console.log(greet("english"));
+
+// best solution
+function greet(language) {
+  return langs[lang] || langs["english"];
+}
