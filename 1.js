@@ -1422,3 +1422,32 @@ function sumStr(a, b) {
   return String(Number(a) + Number(b));
 }
 console.log(sumStr("5", "3"));
+
+// #93
+let helloObj = {
+  english: "Welcome",
+  czech: "Vitejte",
+  danish: "Velkomst",
+  dutch: "Welkom",
+  estonian: "Tere tulemast",
+  finnish: "Tervetuloa",
+  flemish: "Welgekomen",
+  french: "Bienvenue",
+  german: "Willkommen",
+  irish: "Failte",
+  italian: "Benvenuto",
+  latvian: "Gaidits",
+  lithuanian: "Laukiamas",
+  polish: "Witamy",
+  spanish: "Bienvenido",
+  swedish: "Valkommen",
+  welsh: "Croeso",
+};
+
+function greet(language) {
+  return Object.keys(helloObj).includes(language)
+    ? `${helloObj[language]}`
+    : `${helloObj["english"]}`;
+}
+
+console.log(greet("english"));
