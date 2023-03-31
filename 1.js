@@ -186,7 +186,6 @@ function shortcut(string) {
   return string.replace(/[aeiou]/g, "");
 }
 
-// #20
 function findSmallestIntt(args) {
   let newArgs = args.sort((a, b) => a - b).shift();
   return newArgs;
@@ -1417,3 +1416,9 @@ function isPalindrome(x) {
 }
 
 console.log(isPalindrome("a"));
+
+// #92
+function sumStr(a, b) {
+  return String(Number(a) + Number(b));
+}
+console.log(sumStr("5", "3"));
