@@ -1457,7 +1457,7 @@ function greet(language) {
   return langs[lang] || langs["english"];
 }
 
-// #93
+// #94
 function findDifference(a, b) {
   const totalA = a.reduce((total, el) => total * el, 1);
   const totalB = b.reduce((total, el) => total * el, 1);
