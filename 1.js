@@ -1456,3 +1456,11 @@ console.log(greet("english"));
 function greet(language) {
   return langs[lang] || langs["english"];
 }
+
+// #93
+function findDifference(a, b) {
+  const totalA = a.reduce((total, el) => total * el, 1);
+  const totalB = b.reduce((total, el) => total * el, 1);
+  return totalA > totalB ? totalA - totalB : totalB - totalA;
+}
+console.log(findDifference([3, 2, 5], [1, 4, 4]));
