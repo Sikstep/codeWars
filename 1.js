@@ -1464,3 +1464,23 @@ function findDifference(a, b) {
   return totalA > totalB ? totalA - totalB : totalB - totalA;
 }
 console.log(findDifference([3, 2, 5], [1, 4, 4]));
+
+// #95
+let answers = {
+  1: "I love you",
+  2: "a little",
+  3: "a lot",
+  4: "passionately",
+  5: "madly",
+  6: "not at all",
+};
+
+function howMuchILoveYou(nbPetals) {
+  let total = nbPetals;
+  while (total > 6) {
+    total -= 6;
+  }
+  return answers[total];
+}
+
+console.log(howMuchILoveYou(7)); //,"I
