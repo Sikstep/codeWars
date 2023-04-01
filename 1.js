@@ -1484,3 +1484,9 @@ function howMuchILoveYou(nbPetals) {
 }
 
 console.log(howMuchILoveYou(7)); //,"I
+
+// best solution
+const howMuchILoveYou1 = (n) =>
+  ["not at all", "I love you", "a little", "a lot", "passionately", "madly"][
+    n % 6
+  ];
