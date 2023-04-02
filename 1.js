@@ -1490,3 +1490,10 @@ const howMuchILoveYou1 = (n) =>
   ["not at all", "I love you", "a little", "a lot", "passionately", "madly"][
     n % 6
   ];
+
+// #96
+function testEven(n) {
+  return n % 2 === 0;
+}
+
+console.log(testEven(0));
