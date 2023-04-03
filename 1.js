@@ -1497,3 +1497,17 @@ function testEven(n) {
 }
 
 console.log(testEven(0));
+
+// #97 Scoup - замыкание
+function makeCounter() {
+  let count = 0;
+  return function () {
+    return ++count;
+  };
+}
+
+let counter1 = makeCounter();
+let counter2 = makeCounter();
+console.log("counter1 - 1 вызов:", counter1());
+console.log("counter1 - 2 вызов:", counter1());
+console.log("counter2 - 1 вызов:", counter2());
