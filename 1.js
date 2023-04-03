@@ -1511,3 +1511,16 @@ let counter2 = makeCounter();
 console.log("counter1 - 1 вызов:", counter1());
 console.log("counter1 - 2 вызов:", counter1());
 console.log("counter2 - 1 вызов:", counter2());
+
+// #98 Curriring - керирование
+function sum(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
+        return a + b + c + d;
+      };
+    };
+  };
+}
+
+console.log(sum(1)(2)(5)(6));
