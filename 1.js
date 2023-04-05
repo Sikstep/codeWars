@@ -1546,3 +1546,12 @@ function finalGrade(exam, projects) {
   if ((exam > 50) & (projects >= 2)) return 75;
   return 0;
 }
+
+// #100
+function squareOrSquareRoot(array) {
+  return array.map((el) =>
+    Number.isInteger(Math.sqrt(el)) ? Math.sqrt(el) : el ** 2
+  );
+}
+
+console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]));
