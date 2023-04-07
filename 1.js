@@ -1594,3 +1594,21 @@ console.log(
     "perhaps",
   ])
 );
+
+// #103 setTimeout + setInterval
+function printNumbers(from, to) {
+  let timeID = setInterval(() => {
+    console.log(from++);
+  }, 1000);
+  setTimeout(() => clearInterval(timeID), to * 1000);
+}
+printNumbers(7, 15);
+
+function printNumbersWithSetTimeout(from, to) {
+  let timeID = setTimeout(function newFoo() {
+    console.log(from++);
+    timeID = setTimeout(newFoo, 1000);
+  }, 1000);
+  setTimeout(() => clearTimeout(timeID), to * 1000);
+}
+printNumbersWithSetTimeout(2, 6);
