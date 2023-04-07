@@ -1555,3 +1555,12 @@ function squareOrSquareRoot(array) {
 }
 
 console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]));
+
+// #101 regular expression регулярные выражения (поиск всех цифр в строке)
+
+function isItANum(str) {
+  let newstr = str.replace(/\D/g, "");
+  return newstr.length === 11 && newstr[0] == 0 ? newstr : "Not a phone number";
+}
+
+console.log(isItANum("S:)0207ERGQREG88349F82!efRF)"));
