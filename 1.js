@@ -1564,3 +1564,13 @@ function isItANum(str) {
 }
 
 console.log(isItANum("S:)0207ERGQREG88349F82!efRF)"));
+
+// решение через фильтр без регулярок
+
+function isItANum1(s) {
+  let r = s
+    .split("")
+    .filter((c) => "0123456789".includes(c))
+    .join("");
+  return (r.length == 11 && r[0] == "0" && r) || "Not a phone number";
+}
