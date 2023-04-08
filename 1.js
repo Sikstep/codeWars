@@ -1626,3 +1626,10 @@ function expressionMatter(a, b, c) {
 }
 
 console.log(expressionMatter(2, 1, 2));
+
+//105
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+
+console.log(goals(0, 0, 0));
