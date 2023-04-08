@@ -1612,3 +1612,17 @@ function printNumbersWithSetTimeout(from, to) {
   setTimeout(() => clearTimeout(timeID), to * 1000);
 }
 printNumbersWithSetTimeout(2, 6);
+
+//104
+function expressionMatter(a, b, c) {
+  const arr = [];
+  arr.push(a * (b + c));
+  arr.push(a * b * c);
+  arr.push(a + b * c);
+  arr.push(a * b + c);
+  arr.push((a + b) * c);
+  arr.push(a + b + c);
+  return Math.max(...arr);
+}
+
+console.log(expressionMatter(2, 1, 2));
