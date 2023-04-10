@@ -1633,3 +1633,14 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 }
 
 console.log(goals(0, 0, 0));
+
+// 106
+function between(a, b) {
+  const arr = []
+  for (let i = a; i <= b; i++) {
+      arr.push(i)
+      
+  }
+  return arr
+}
+console.log(between(1,4));
