@@ -1636,11 +1636,17 @@ console.log(goals(0, 0, 0));
 
 // 106
 function between(a, b) {
-  const arr = []
+  const arr = [];
   for (let i = a; i <= b; i++) {
-      arr.push(i)
-      
+    arr.push(i);
   }
-  return arr
+  return arr;
 }
-console.log(between(1,4));
+console.log(between(1, 4));
+
+// 107
+
+function sayHello(name) {
+  return "Hello," + " " + name;
+}
+console.log(sayHello("Mr.Spock"));
