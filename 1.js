@@ -1657,3 +1657,11 @@ function saleHotdogs(n) {
 }
 
 console.log(saleHotdogs(1));
+
+// 109
+
+function move(position, roll) {
+  return position + roll * 2;
+}
+
+console.log(move(0, 4));
