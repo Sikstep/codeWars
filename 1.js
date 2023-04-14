@@ -1665,3 +1665,10 @@ function move(position, roll) {
 }
 
 console.log(move(0, 4));
+// 110
+
+function fixTheMeerkat(arr) {
+  return arr.reverse();
+}
+
+console.log(fixTheMeerkat(["tail", "body", "head"]));
