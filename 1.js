@@ -1672,3 +1672,11 @@ function fixTheMeerkat(arr) {
 }
 
 console.log(fixTheMeerkat(["tail", "body", "head"]));
+
+// 111
+String.prototype.isUpperCase = function () {
+  const filteredStr = this.split("").filter((el) => el.toUpperCase() === el);
+  return this.split("").length === filteredStr.length;
+};
+
+console.log("hello I AM DONALD".isUpperCase());
