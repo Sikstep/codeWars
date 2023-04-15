@@ -1685,3 +1685,10 @@ console.log("hello I AM DONALD".isUpperCase());
 String.prototype.isUpperCase = function () {
   return this == this.toUpperCase();
 };
+
+// 112
+
+const square = (num) => {
+  return num ** 2;
+};
+console.log(square(3));
