@@ -1680,3 +1680,8 @@ String.prototype.isUpperCase = function () {
 };
 
 console.log("hello I AM DONALD".isUpperCase());
+
+// best solution
+String.prototype.isUpperCase = function () {
+  return this == this.toUpperCase();
+};
