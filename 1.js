@@ -1700,3 +1700,9 @@ function index(array, n) {
 }
 
 console.log(index([1, 2, 3, 4], 2));
+
+// best solution
+function index1(array, n) {
+  //your code here
+  return array[n] ** n || -1;
+}
