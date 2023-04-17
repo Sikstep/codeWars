@@ -1739,11 +1739,19 @@ const well1 = (x) => {
 
 // 115
 function stringy(size) {
-  let str = '1'
-  for (let i = 0; i < size-1; i++) {
-      str[i] == 1 ? str += '0' : str += '1'
-  }   
-  return str
+  let str = "1";
+  for (let i = 0; i < size - 1; i++) {
+    str[i] == 1 ? (str += "0") : (str += "1");
+  }
+  return str;
 }
 
 console.log(stringy(6));
+
+// bs
+
+function stringy1(size) {
+  var str = "";
+  for (var i = 1; i <= size; i++) str += i % 2;
+  return str;
+}
