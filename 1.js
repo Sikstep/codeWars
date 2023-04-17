@@ -1706,3 +1706,23 @@ function index1(array, n) {
   //your code here
   return array[n] ** n || -1;
 }
+
+// 114
+function well(x) {
+  // let filteredX = x.filter(el => el === 'good').length;
+  // if (filteredX < 2) return 'Publish!'
+  // if (filteredX >= 2) return 'I smell a series!'
+  // if (filteredX === 0) return 'Fail!'
+  let count = 0;
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] === "good") {
+      ++count;
+    }
+  }
+  return count > 2
+    ? "I smell a series!"
+    : count === 1 || count === 2
+    ? "Publish!"
+    : "Fail!";
+}
+console.log(well(["bad", "bad", "bad"]));
