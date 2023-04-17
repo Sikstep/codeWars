@@ -1755,3 +1755,8 @@ function stringy1(size) {
   for (var i = 1; i <= size; i++) str += i % 2;
   return str;
 }
+
+//116
+function checkAlive(health) {
+  return health > 0;
+}
