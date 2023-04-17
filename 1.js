@@ -1736,3 +1736,14 @@ const well1 = (x) => {
     ? "Publish!"
     : "I smell a series!";
 };
+
+// 115
+function stringy(size) {
+  let str = '1'
+  for (let i = 0; i < size-1; i++) {
+      str[i] == 1 ? str += '0' : str += '1'
+  }   
+  return str
+}
+
+console.log(stringy(6));
