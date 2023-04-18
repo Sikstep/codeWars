@@ -1765,3 +1765,10 @@ function checkAlive(health) {
 function unusualFive() {
   return "fucku".length;
 }
+
+//118
+function problem(x){
+  return typeof x === 'number' ? x * 50 + 6 : 'Error'
+}
+console.log(problem('str'));
+console.log(problem(5));
