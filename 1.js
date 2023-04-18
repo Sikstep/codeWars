@@ -1760,3 +1760,8 @@ function stringy1(size) {
 function checkAlive(health) {
   return health > 0;
 }
+
+// 117
+function unusualFive() {
+  return "fucku".length;
+}
