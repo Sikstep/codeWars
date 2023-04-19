@@ -1767,8 +1767,20 @@ function unusualFive() {
 }
 
 //118
-function problem(x){
-  return typeof x === 'number' ? x * 50 + 6 : 'Error'
+function problem(x) {
+  return typeof x === "number" ? x * 50 + 6 : "Error";
 }
-console.log(problem('str'));
+console.log(problem("str"));
 console.log(problem(5));
+
+// 119
+function findMultiples(integer, limit) {
+  let iterCount = Math.floor(limit / integer);
+  const result = [];
+  for (let i = 1; i <= iterCount; i++) {
+    result.push(integer * i);
+  }
+  return result;
+}
+
+console.log(findMultiples(5, 25));
