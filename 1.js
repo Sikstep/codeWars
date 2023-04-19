@@ -1784,3 +1784,12 @@ function findMultiples(integer, limit) {
 }
 
 console.log(findMultiples(5, 25));
+
+//bs
+function findMultiples1(int, limit) {
+  let result = [];
+
+  for (let i = int; i <= limit; i += int) result.push(i);
+
+  return result;
+}
