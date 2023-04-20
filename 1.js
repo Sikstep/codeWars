@@ -1813,3 +1813,10 @@ function solution1(string) {
     .map((el) => (el.toUpperCase() === el ? ` ${el}` : el))
     .join("");
 }
+
+//121
+function solution1(a, b) {
+  return a.length > b.length ? b + a + b : a + b + a;
+}
+
+console.log(solution1("13", "200"));
