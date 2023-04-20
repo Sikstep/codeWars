@@ -1804,3 +1804,12 @@ function solution(string) {
 }
 
 console.log(solution("camelCasing"));
+
+//refactoring
+function solution1(string) {
+  // return string.split('').map(el => el.toUpperCase() === el ? ['', ...el] : el).join('').replace(/,/g,' ')
+  return string
+    .split("")
+    .map((el) => (el.toUpperCase() === el ? ` ${el}` : el))
+    .join("");
+}
