@@ -1793,3 +1793,14 @@ function findMultiples1(int, limit) {
 
   return result;
 }
+
+//120
+function solution(string) {
+  return string
+    .split("")
+    .map((el) => (el.toUpperCase() === el ? ["", ...el] : el))
+    .join("")
+    .replace(/,/g, " ");
+}
+
+console.log(solution("camelCasing"));
