@@ -1820,3 +1820,8 @@ function solution1(a, b) {
 }
 
 console.log(solution1("13", "200"));
+
+// 122
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
