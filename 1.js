@@ -1825,3 +1825,16 @@ console.log(solution1("13", "200"));
 var a = "code";
 var b = "wa.rs";
 var name = a + b;
+
+//123
+function nthEven(n) {
+  return n * 2 - 2;
+}
+
+console.log(nthEven(1));
+//124
+
+function nameShuffler(str) {
+  return str.split(" ").reverse().join(" ");
+}
+console.log(nameShuffler("john McClane"));
