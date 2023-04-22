@@ -1852,3 +1852,11 @@ function remove(string) {
 }
 
 console.log(remove("hi!"));
+
+// bs
+
+const remove1 = (s) => s.replace(/!$/, "");
+
+function remove2(s) {
+  return s.endsWith("!") ? s.slice(0, -1) : s;
+}
