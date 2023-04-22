@@ -1845,3 +1845,10 @@ function reverseList(list) {
 }
 
 console.log(reverseList([1, 2, 3, 4]));
+
+// 126
+function remove(string) {
+  return string[string.length - 1] === "!" ? string.slice(0, -1) : string;
+}
+
+console.log(remove("hi!"));
