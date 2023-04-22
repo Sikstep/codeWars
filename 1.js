@@ -1838,3 +1838,9 @@ function nameShuffler(str) {
   return str.split(" ").reverse().join(" ");
 }
 console.log(nameShuffler("john McClane"));
+
+//125
+function reverseList(list) {
+  return list.reverse();
+}
+console.log(reverseList([1, 2, 3, 4]));
