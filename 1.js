@@ -1871,3 +1871,9 @@ function pipeFix(numbers) {
 }
 
 console.log(pipeFix([1, 2, 3, 5, 6, 8, 9]));
+
+// 128
+function combat(health, damage) {
+  return health - damage > 0 ? health - damage : 0;
+}
+console.log(combat(100, 5));
