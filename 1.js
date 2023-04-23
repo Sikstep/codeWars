@@ -1877,3 +1877,11 @@ function combat(health, damage) {
   return health - damage > 0 ? health - damage : 0;
 }
 console.log(combat(100, 5));
+
+//129
+function mergeArrays(arr1, arr2) {
+  const newArr = arr1.filter((el) => !arr2.includes(el));
+  return [...arr2, ...newArr].sort((a, b) => a - b);
+}
+
+console.log(mergeArrays([1, 2, 3, 4], [5, 6, 7, 8]));
