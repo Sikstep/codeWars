@@ -1910,3 +1910,15 @@ function reverse(string) {
   return string.split(" ").reverse().join(" ");
 }
 console.log(reverse("hi there"));
+
+// 134 while + for
+function generateRange(min, max, step) {
+  const arr = [];
+  while (min <= max) {
+    arr.push(min);
+    min += step;
+  }
+  return arr;
+}
+
+console.log(generateRange(2, 10, 2));
