@@ -1922,3 +1922,11 @@ function generateRange(min, max, step) {
 }
 
 console.log(generateRange(2, 10, 2));
+//134 + for
+function generateRange1(min, max, step) {
+  let arr = [];
+  for (let i = min; i <= max; i += step) {
+    arr.push(i);
+  }
+  return arr;
+}
