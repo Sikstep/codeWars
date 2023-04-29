@@ -1904,3 +1904,9 @@ function capitalizeWord(word) {
 }
 
 console.log(capitalizeWord("word"));
+
+// 133
+function reverse(string) {
+  return string.split(" ").reverse().join(" ");
+}
+console.log(reverse("hi there"));
