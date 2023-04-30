@@ -1930,3 +1930,10 @@ function generateRange1(min, max, step) {
   }
   return arr;
 }
+
+// 135
+function getChar(c) {
+  return String.fromCharCode(c);
+}
+
+console.log(getChar(55));
