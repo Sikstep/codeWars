@@ -1941,12 +1941,30 @@ console.log(getChar(55));
 // 136
 
 function howManyDalmations(number) {
-  
-  var dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIONS!!!"];
-  
-  return number <= 10 ? dogs[0] : number <= 50 ? dogs[1] : number == 101 ? dogs[3] : dogs[2];
-  
-  }
+  var dogs = [
+    "Hardly any",
+    "More than a handful!",
+    "Woah that's a lot of dogs!",
+    "101 DALMATIONS!!!",
+  ];
 
-  console.log(howManyDalmations(101));
+  return number <= 10
+    ? dogs[0]
+    : number <= 50
+    ? dogs[1]
+    : number == 101
+    ? dogs[3]
+    : dogs[2];
+}
 
+console.log(howManyDalmations(101));
+
+// 137
+function peopleWithAgeDrink(old) {
+  if (old <= 13) return "drink toddy";
+  if (old <= 17) return "drink coke";
+  if (old <= 20) return "drink beer";
+  if (old >= 21) return "drink whisky";
+}
+
+console.log(peopleWithAgeDrink(22));
