@@ -2002,3 +2002,7 @@ function hello(name) {
 }
 
 console.log(hello("john"));
+
+// bs
+const hello1 = (s) =>
+  `Hello, ${s ? s[0].toUpperCase() + s.slice(1).toLowerCase() : "World"}!`;
