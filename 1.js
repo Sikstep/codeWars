@@ -2006,3 +2006,8 @@ console.log(hello("john"));
 // bs
 const hello1 = (s) =>
   `Hello, ${s ? s[0].toUpperCase() + s.slice(1).toLowerCase() : "World"}!`;
+
+//140
+const correctTail = (bod, tail) => bod.slice(-1) === tail;
+
+console.log(correctTail("Foe", "x"));
