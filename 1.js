@@ -2011,3 +2011,8 @@ const hello1 = (s) =>
 const correctTail = (bod, tail) => bod.slice(-1) === tail;
 
 console.log(correctTail("Foe", "x"));
+
+//141 перевод 10ричное число в 16ричное
+function hexToDec(hexString){
+  return  parseInt(hexString, 16);
+ }
