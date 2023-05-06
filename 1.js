@@ -2013,6 +2013,17 @@ const correctTail = (bod, tail) => bod.slice(-1) === tail;
 console.log(correctTail("Foe", "x"));
 
 //141 перевод 10ричное число в 16ричное
-function hexToDec(hexString){
-  return  parseInt(hexString, 16);
- }
+function hexToDec(hexString) {
+  return parseInt(hexString, 16);
+}
+
+//142
+function tripleTrouble(one, two, three) {
+  const arr = [];
+  for (let i = 0; i < one.length; i++) {
+    arr.push(one.split("")[i], two.split("")[i], three.split("")[i]);
+  }
+  return arr.join("");
+}
+
+console.log(tripleTrouble("aaa", "bbb", "ccc"));
