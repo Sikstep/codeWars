@@ -2036,3 +2036,21 @@ function tripleTrouble1(one, two, three) {
   }
   return x;
 }
+
+//143
+
+function noBoringZeros(n) {
+  let strN = String(n).split('').reverse();
+  console.log(strN);
+  for (let i = 0; i < strN.length; i++) {
+      if (strN[i] == 0) {
+          delete strN[i]
+      } else { break }
+      
+      
+  }
+  return +strN.reverse().join('')
+
+}
+
+console.log(noBoringZeros(77059000));
