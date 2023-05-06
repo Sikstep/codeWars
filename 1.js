@@ -2040,17 +2040,23 @@ function tripleTrouble1(one, two, three) {
 //143
 
 function noBoringZeros(n) {
-  let strN = String(n).split('').reverse();
+  let strN = String(n).split("").reverse();
   console.log(strN);
   for (let i = 0; i < strN.length; i++) {
-      if (strN[i] == 0) {
-          delete strN[i]
-      } else { break }
-      
-      
+    if (strN[i] == 0) {
+      delete strN[i];
+    } else {
+      break;
+    }
   }
-  return +strN.reverse().join('')
-
+  return +strN.reverse().join("");
 }
 
 console.log(noBoringZeros(77059000));
+
+//143 with regular expressions
+
+function noBoringZeros1(n) {
+  return Number(String(n).replace(/0+$/, ""));
+}
+console.log(noBoringZeros1(77059000));
