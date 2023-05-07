@@ -2083,3 +2083,14 @@ function binToDec(bin) {
 }
 
 console.log(binToDec("1001001"));
+
+//146
+function multiTable(number) {
+  let table = `${number} * ${1} = ${number * 1}`;
+  for (let i = 2; i <= 10; i++) {
+    table += `\n${number} * ${i} = ${number * i}`;
+  }
+  return table;
+}
+
+console.log(multiTable(7));
