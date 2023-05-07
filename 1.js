@@ -2076,3 +2076,10 @@ function buildString(...template) {
 }
 
 console.log(buildString("Cheese", "Milk", "Chocolate"));
+
+//145
+function binToDec(bin) {
+  return parseInt(bin, 2);
+}
+
+console.log(binToDec("1001001"));
