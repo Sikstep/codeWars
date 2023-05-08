@@ -2145,3 +2145,14 @@ console.log(position("z"));
 
 // bs
 position = (l) => `Position of alphabet: ${l.charCodeAt() - 96}`;
+
+//148
+function take(arr, n) {
+  if (arr.length > n) {
+    return arr.filter((el, index) => index < n);
+  } else {
+    return arr;
+  }
+}
+
+console.log(take([30, 37, -21, 68, 68, -3, 33, -39, 28, 50, -27], 44));
