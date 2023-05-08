@@ -2156,3 +2156,9 @@ function take(arr, n) {
 }
 
 console.log(take([30, 37, -21, 68, 68, -3, 33, -39, 28, 50, -27], 44));
+
+// bs
+
+function take1(arr, n) {
+  return arr.slice(0, n);
+}
