@@ -2107,6 +2107,8 @@ const multiTable1 = (number) => {
   return table;
 };
 
+//147
+
 function position(letter) {
   const letters = {
     a: 1,
@@ -2140,3 +2142,6 @@ function position(letter) {
 }
 
 console.log(position("z"));
+
+// bs
+position = (l) => `Position of alphabet: ${l.charCodeAt() - 96}`;
