@@ -2162,3 +2162,13 @@ console.log(take([30, 37, -21, 68, 68, -3, 33, -39, 28, 50, -27], 44));
 function take1(arr, n) {
   return arr.slice(0, n);
 }
+
+// 149
+function arrayMadness(a, b) {
+  return (
+    a.reduce((total, el) => total + el ** 2, 0) >
+    b.reduce((total, el) => total + el ** 3, 0)
+  );
+}
+
+console.log(arrayMadness([4, 5, 6], [1, 2, 3]));
