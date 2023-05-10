@@ -2172,3 +2172,11 @@ function arrayMadness(a, b) {
 }
 
 console.log(arrayMadness([4, 5, 6], [1, 2, 3]));
+
+//150
+
+function toBinary(n) {
+  return +n.toString(2);
+}
+
+console.log(toBinary(1));
