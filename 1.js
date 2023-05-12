@@ -2180,3 +2180,10 @@ function toBinary(n) {
 }
 
 console.log(toBinary(1));
+
+//151
+function multipleOfIndex(array) {
+  return array.filter((el, index) => el % index === 0);
+}
+
+console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]));
