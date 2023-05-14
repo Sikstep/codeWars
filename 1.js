@@ -2208,3 +2208,14 @@ function distinct1(arr) {
 
 // from filter:
 const distinct2 = (a) => a.filter((item, index) => a.indexOf(item) === index);
+
+//153
+function rainAmount(mm) {
+  if (mm <= 40) {
+    return `You need to give your plant ${40 - mm}mm of water`;
+  } else {
+    return "Your plant has had more than enough water for today!";
+  }
+}
+
+console.log(rainAmount(39));
