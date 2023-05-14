@@ -2190,8 +2190,18 @@ console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]));
 
 // 152 убрать дубликаты в массиве через Set:
 function distinct(a) {
-  const newArr = new Set(a)
-  return [...newArr]
-
+  const newArr = new Set(a);
+  return [...newArr];
 }
-console.log(distinct([1,1,1,1,3,4,3,3,2,2,2,5]));
+console.log(distinct([1, 1, 1, 1, 3, 4, 3, 3, 2, 2, 2, 5]));
+// from cycle for:
+function distinct1(arr) {
+  let res = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (!res.includes(arr[i])) {
+      res.push(arr[i]);
+    }
+  }
+  return res;
+}
