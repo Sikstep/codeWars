@@ -2205,3 +2205,6 @@ function distinct1(arr) {
   }
   return res;
 }
+
+// from filter:
+const distinct2 = (a) => a.filter((item, index) => a.indexOf(item) === index);
