@@ -2227,3 +2227,11 @@ function dutyFree(normPrice, discount, hol) {
 }
 
 console.log(dutyFree(12, 50, 1000));
+
+// 155
+function stringClean(s) {
+  return s.replace(/[1234567890]/gi, "");
+}
+
+console.log(stringClean("! !"));
+console.log(stringClean("123456789"));
