@@ -2235,3 +2235,11 @@ function stringClean(s) {
 
 console.log(stringClean("! !"));
 console.log(stringClean("123456789"));
+
+//156
+function formatMoney(amount) {
+  String(amount).replace();
+  return `$${amount}`;
+}
+
+console.log(formatMoney(33.99));
