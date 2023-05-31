@@ -2243,3 +2243,4 @@ function formatMoney(amount) {
 }
 
 console.log(formatMoney(33.99));
+console.log();
