@@ -2238,8 +2238,12 @@ console.log(stringClean("123456789"));
 
 //156
 function formatMoney(amount) {
-  String(amount).replace();
-  return `$${amount}`;
+  let newStr = String(amount);
+  return newStr.length === 2
+    ? `$${newStr}.00`
+    : newStr.length === 4
+    ? `$${newStr}0`
+    : `$${newStr}`;
 }
 
 console.log(formatMoney(33.99));
