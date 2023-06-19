@@ -2236,9 +2236,9 @@ function stringClean(s) {
 console.log(stringClean("! !"));
 console.log(stringClean("123456789"));
 
-//156
+//156 .toFixed()
 function formatMoney(amount) {
-
+  return `$${amount.toFixed(2)}`;
 }
 
 console.log(formatMoney(33.99));
