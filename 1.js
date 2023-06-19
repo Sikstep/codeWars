@@ -2243,3 +2243,11 @@ function formatMoney(amount) {
 
 console.log(formatMoney(33.99));
 console.log();
+
+//157
+
+function derive(coefficient, exponent) {
+  return `${coefficient * exponent}x^${exponent - 1}`;
+}
+
+console.log(derive(5, 9));
