@@ -2279,3 +2279,11 @@ function popElement(arr) {
 
   return arr;
 }
+
+//159 basic obj
+
+function animal(obj) {
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
+
+console.log(animal({ name: "rabbit", legs: 4, color: "gray" }));
