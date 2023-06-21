@@ -2299,3 +2299,10 @@ console.log(flip("L", [1, 4, 5, 3, 5]));
 //+bs
 
 const flip1 = (d, a) => a.sort((x, y) => (d === "R" ? x - y : y - x));
+
+//161
+function main(verb, noun) {
+  return verb + noun;
+}
+
+console.log(main("take ", "item"));
