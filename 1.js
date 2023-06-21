@@ -2287,3 +2287,11 @@ function animal(obj) {
 }
 
 console.log(animal({ name: "rabbit", legs: 4, color: "gray" }));
+
+//160 sort
+const flip = (d, a) => {
+  return d === "R" ? a.sort((a, b) => a - b) : a.sort((a, b) => b - a);
+};
+
+console.log(flip("R", [3, 2, 1, 2]));
+console.log(flip("L", [1, 4, 5, 3, 5]));
