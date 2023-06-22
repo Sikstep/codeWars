@@ -2306,3 +2306,11 @@ function main(verb, noun) {
 }
 
 console.log(main("take ", "item"));
+
+// 162
+
+function include(arr, item) {
+  return arr.includes(item);
+}
+
+console.log(include([1, 2, 3], 2));
