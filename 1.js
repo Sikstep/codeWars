@@ -2314,3 +2314,11 @@ function include(arr, item) {
 }
 
 console.log(include([1, 2, 3], 2));
+
+//163
+
+var findAverage = function (nums) {
+  return nums.reduce((total, arg) => total + arg, 0) / nums.length;
+};
+
+console.log(findAverage([1, 3, 5, 7]));
