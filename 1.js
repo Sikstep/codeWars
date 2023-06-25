@@ -2322,3 +2322,25 @@ var findAverage = function (nums) {
 };
 
 console.log(findAverage([1, 3, 5, 7]));
+
+//164
+
+function calculateAge(a, b) {
+  if (a === b) {
+    return "You were born this very year!";
+  }
+  if (a === b - 1) {
+    return `You are 1 year old.`;
+  }
+  if (a === b + 1) {
+    return `You will be born in 1 year.`;
+  }
+  if (a > b) {
+    return `You will be born in ${a - b} years.`;
+  }
+  if (a < b) {
+    return `You are ${b - a} years old.`;
+  }
+}
+
+console.log(calculateAge(2012, 2016));
