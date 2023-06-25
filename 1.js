@@ -2344,3 +2344,12 @@ function calculateAge(a, b) {
 }
 
 console.log(calculateAge(2012, 2016));
+
+// 165 class Ball
+
+class Ball {
+  constructor(ballType = "regular") {
+    this.ballType = ballType;
+  }
+}
+console.log(new Ball("Footbal"));
