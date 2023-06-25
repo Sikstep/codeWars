@@ -2356,6 +2356,6 @@ console.log(new Ball("Footbal"));
 
 // alternative:
 
-var Ball = function (ballType) {
+var Balls = function (ballType) {
   this.ballType = ballType || "regular";
 };
