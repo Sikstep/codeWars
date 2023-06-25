@@ -2353,3 +2353,9 @@ class Ball {
   }
 }
 console.log(new Ball("Footbal"));
+
+// alternative:
+
+var Ball = function (ballType) {
+  this.ballType = ballType || "regular";
+};
