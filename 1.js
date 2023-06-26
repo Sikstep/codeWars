@@ -2359,3 +2359,12 @@ console.log(new Ball("Footbal"));
 var Balls = function (ballType) {
   this.ballType = ballType || "regular";
 };
+
+//166
+function remainder(n, m) {
+  // Divide the larger argument by the smaller argument and return the remainder
+  // return n > m && m > 0 ? n % m : n < m && n > 0 ? m % n : NaN;
+  return n >= m && m != 0 ? n % m : n <= m && n != 0 ? m % n : NaN;
+}
+
+console.log(remainder(17, 2));
