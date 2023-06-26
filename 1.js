@@ -2368,3 +2368,9 @@ function remainder(n, m) {
 }
 
 console.log(remainder(17, 2));
+
+//bs
+
+function remainder(a, b) {
+  return a > b ? a % b : b % a;
+}
