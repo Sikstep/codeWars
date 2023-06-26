@@ -2374,3 +2374,13 @@ console.log(remainder(17, 2));
 function remainder(a, b) {
   return a > b ? a % b : b % a;
 }
+
+//167
+
+const getSize = (a, b, c) => {
+  const square = 2 * (a * b + a * c + b * c);
+  const value = a * b * c;
+  return [square, value];
+};
+
+console.log(getSize(4, 2, 6));
