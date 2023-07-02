@@ -2397,3 +2397,11 @@ function spEng(sentence) {
 }
 
 console.log(spEng("eglish"));
+
+// with regular expression
+function spEng1(sentence){
+  return /english/i.test(sentence);
+  }
+
+  console.log(spEng1('eglish'));
+  console.log(spEng1('english'));
