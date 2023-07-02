@@ -2384,3 +2384,8 @@ const getSize = (a, b, c) => {
 };
 
 console.log(getSize(4, 2, 6));
+
+//168
+function check(a, b) {
+  return a.includes(b);
+}
