@@ -2389,3 +2389,11 @@ console.log(getSize(4, 2, 6));
 function check(a, b) {
   return a.includes(b);
 }
+
+//169
+
+function spEng(sentence) {
+  return sentence.toLowerCase().includes("english");
+}
+
+console.log(spEng("eglish"));
