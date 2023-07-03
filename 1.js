@@ -2423,3 +2423,11 @@ function sumOfDifferences(arr) {
 function sumOfDifferences1(arr) {
   return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 }
+
+//171
+
+function sayHello(name, city, state) {
+  return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`;
+}
+
+console.log(sayHello(["John", "Smith"], "Phoenix", "Arizona"));
