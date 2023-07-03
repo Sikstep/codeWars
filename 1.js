@@ -2399,9 +2399,21 @@ function spEng(sentence) {
 console.log(spEng("eglish"));
 
 // with regular expression
-function spEng1(sentence){
+function spEng1(sentence) {
   return /english/i.test(sentence);
-  }
+}
 
-  console.log(spEng1('eglish'));
-  console.log(spEng1('english'));
+console.log(spEng1("eglish"));
+console.log(spEng1("english"));
+
+//170 sort + for i
+
+function sumOfDifferences(arr) {
+  const newArr = [...arr].sort((a, b) => b - a);
+  let result = 0;
+
+  for (let i = 0; i < newArr.length - 1; i++) {
+    result += newArr[i] - newArr[i + 1];
+  }
+  return result;
+}
