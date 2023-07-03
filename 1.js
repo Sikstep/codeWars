@@ -2417,3 +2417,9 @@ function sumOfDifferences(arr) {
   }
   return result;
 }
+
+// bs
+
+function sumOfDifferences1(arr) {
+  return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
+}
