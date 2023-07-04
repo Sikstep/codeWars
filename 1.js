@@ -2432,7 +2432,7 @@ function sayHello(name, city, state) {
 
 console.log(sayHello(["John", "Smith"], "Phoenix", "Arizona"));
 
-//172
+//172 switch-case
 function whatday(num) {
   switch (num) {
     case 1:
