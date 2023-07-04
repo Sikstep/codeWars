@@ -2470,3 +2470,11 @@ function whatday1(num) {
   ];
   return days[num - 1] || "Wrong, please enter a number between 1 and 7";
 }
+
+//173
+
+var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
