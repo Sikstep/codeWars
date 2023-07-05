@@ -2486,3 +2486,11 @@ function printArray(array) {
 }
 
 console.log(printArray([2, 4, 5, 6]));
+
+//175
+
+function usdcny(usd) {
+  return `${(usd * 6.75).toFixed(2)} Chinese Yuan`;
+}
+
+console.log(usdcny(15));
