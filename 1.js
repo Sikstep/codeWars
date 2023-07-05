@@ -2478,3 +2478,11 @@ var championsLeagueGoals = 10;
 var copaDelReyGoals = 5;
 
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+
+//174
+
+function printArray(array) {
+  return array.join();
+}
+
+console.log(printArray([2, 4, 5, 6]));
