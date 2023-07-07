@@ -2513,3 +2513,13 @@ function differenceInAges(ages) {
 }
 
 console.log(differenceInAges([82, 15, 6, 38, 35]));
+
+//178 Promise
+
+function delay(ms) {
+  return new Promise(function (resolve, reject) {
+    setTimeout(() => resolve("done"), ms);
+  });
+}
+
+delay(3000).then(() => console.log("выполнилось через 3 секунды"));
