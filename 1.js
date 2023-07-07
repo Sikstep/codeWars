@@ -2494,3 +2494,11 @@ function usdcny(usd) {
 }
 
 console.log(usdcny(15));
+
+//176 .toFixed
+
+function twoDecimalPlaces(n) {
+  return +n.toFixed(2);
+}
+
+console.log(twoDecimalPlaces(4.53125123123));
