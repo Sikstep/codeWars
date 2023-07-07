@@ -2523,3 +2523,11 @@ function delay(ms) {
 }
 
 delay(3000).then(() => console.log("выполнилось через 3 секунды"));
+
+//after refactoring:
+
+function delay1(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+delay1(3000).then(() => console.log("выполнилось через 3 секунды"));
