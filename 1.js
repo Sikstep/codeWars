@@ -2502,3 +2502,14 @@ function twoDecimalPlaces(n) {
 }
 
 console.log(twoDecimalPlaces(4.53125123123));
+
+//177 Math.max & Math.min
+
+function differenceInAges(ages) {
+  const minAge = Math.min(...ages);
+  const maxAge = Math.max(...ages);
+
+  return [minAge, maxAge, maxAge - minAge];
+}
+
+console.log(differenceInAges([82, 15, 6, 38, 35]));
