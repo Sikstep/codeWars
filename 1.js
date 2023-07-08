@@ -2531,3 +2531,10 @@ function delay1(ms) {
 }
 
 delay1(3000).then(() => console.log("выполнилось через 3 секунды"));
+
+//179
+var replaceDots = function (str) {
+  return str.replace(/[.]/g, "-");
+};
+
+console.log(replaceDots("one.two.three"));
