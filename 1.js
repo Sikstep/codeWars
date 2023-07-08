@@ -2541,8 +2541,19 @@ console.log(replaceDots("one.two.three"));
 
 // 1 more variant
 
-var replaceDots1 = function(str) {
+var replaceDots1 = function (str) {
   // added the \ to escape special characters
   // added the g so that replace is run for all occurences in the string
-    return str.replace(/\./g, '-');
-  }
+  return str.replace(/\./g, "-");
+};
+
+//180
+
+function apple(x) {
+  return (+x) ** 2 >= 1000
+    ? `It's hotter than the sun!!`
+    : `Help yourself to a honeycomb Yorkie for the glovebox.`;
+}
+
+console.log(apple("50"));
+console.log(apple(4));
