@@ -2538,3 +2538,11 @@ var replaceDots = function (str) {
 };
 
 console.log(replaceDots("one.two.three"));
+
+// 1 more variant
+
+var replaceDots1 = function(str) {
+  // added the \ to escape special characters
+  // added the g so that replace is run for all occurences in the string
+    return str.replace(/\./g, '-');
+  }
