@@ -2584,3 +2584,16 @@ function getDrinkByProfession(param) {
   }
 }
 console.log(getDrinkByProfession("jabrOni"));
+
+//182 for i
+function sumMul(n, m) {
+  let sum = 0;
+  for (let i = n; i < m; i++) {
+    if (i % n === 0) {
+      sum += i;
+    }
+  }
+  return sum === 0 ? "INVALID" : sum;
+}
+
+console.log(sumMul(2, 9));
