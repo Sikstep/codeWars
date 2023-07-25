@@ -2604,3 +2604,9 @@ function sixToast(num) {
 }
 
 console.log(sixToast(6));
+
+// так же через Math.abs
+
+function sixToast(num) {
+  return Math.abs(num - 6);
+}
