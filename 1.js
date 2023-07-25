@@ -2618,3 +2618,9 @@ function remove(string) {
 }
 
 console.log(remove("!!hi"));
+
+//185 найти все строчные буквы
+
+function lowercaseCount(str) {
+  return str.split("").filter((a) => /[a-z]/.test(a)).length;
+}
