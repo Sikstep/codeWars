@@ -2597,3 +2597,10 @@ function sumMul(n, m) {
 }
 
 console.log(sumMul(2, 9));
+
+//183
+function sixToast(num) {
+  return num - 6 > 0 ? num - 6 : 6 - num;
+}
+
+console.log(sixToast(6));
