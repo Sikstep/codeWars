@@ -2610,3 +2610,11 @@ console.log(sixToast(6));
 function sixToast1(num) {
   return Math.abs(num - 6);
 }
+
+// 184
+
+function remove(string) {
+  return string.replace(/!/gi, "") + "!";
+}
+
+console.log(remove("!!hi"));
