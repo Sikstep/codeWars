@@ -2631,3 +2631,23 @@ var a = "dev";
 var b = "Lab";
 
 var name = a + b;
+
+//187
+
+function sameCase(a, b) {
+  if (/[a-z]/.test(a) && /[a-z]/.test(b)) {
+    return 1;
+  }
+  if (/[A-Z]/.test(a) && /[A-Z]/.test(b)) {
+    return 1;
+  }
+  if (/[a-z]/.test(a) && /[A-Z]/.test(b)) {
+    return 0;
+  } else if (/[A-Z]/.test(a) && /[a-z]/.test(b)) {
+    return 0;
+  } else {
+    return -1;
+  }
+}
+
+console.log(sameCase("C", "B"));
