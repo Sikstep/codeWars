@@ -2624,3 +2624,10 @@ console.log(remove("!!hi"));
 function lowercaseCount(str) {
   return str.split("").filter((a) => /[a-z]/.test(a)).length;
 }
+
+//186
+
+var a = "dev";
+var b = "Lab";
+
+var name = a + b;
