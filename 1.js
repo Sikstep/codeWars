@@ -2651,3 +2651,11 @@ function sameCase(a, b) {
 }
 
 console.log(sameCase("C", "B"));
+
+//188 regular
+
+function remove(string) {
+  return string.replace(/!+$/, "");
+}
+
+console.log(remove("!!Hi!"));
