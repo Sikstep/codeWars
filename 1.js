@@ -2743,3 +2743,8 @@ function array(string) {
 }
 
 console.log(array("1"));
+
+// bs
+function array1(arr) {
+  return arr.split(",").slice(1, -1).join(" ") || null;
+}
