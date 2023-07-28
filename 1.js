@@ -2717,3 +2717,11 @@ function defineSuit(card) {
 }
 
 console.log(defineSuit("Q♠"));
+
+//191 regular expression проверка на строку от 4 до 16 символов, только строчные буквы, и все цифры включая _
+
+function validateUsr(username) {
+  return /^[a-z0-9_]{4,16}$/.test(username);
+}
+
+console.log(/[a-z]/.test("asda"));
