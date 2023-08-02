@@ -2752,8 +2752,9 @@ function array1(arr) {
 //193
 
 function converter(mpg) {
-  let impGal = 4.54609;
-  return; //code to convert miles per imperial gallon to kilometers per liter
+  let impGal = 4.54609188;
+  let mile = 1.609344;
+  return +((mpg / impGal) * mile).toFixed(2); //code to convert miles per imperial gallon to kilometers per liter
 }
 
 console.log(converter(10));
