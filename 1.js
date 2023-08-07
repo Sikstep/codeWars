@@ -2758,3 +2758,17 @@ function converter(mpg) {
 }
 
 console.log(converter(10));
+
+//194
+function cookie(x) {
+  let str = `Who ate the last cookie? It was `;
+  if (typeof x === "string") {
+    return (str += `Zach!`);
+  }
+  if (typeof x === "number") {
+    return (str += `Monica!`);
+  }
+  return (str += `the dog!`);
+}
+
+console.log(cookie("Ryan"));
