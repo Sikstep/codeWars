@@ -2780,3 +2780,11 @@ function cookie(x) {
   var who = t == "string" ? "Zach" : t == "number" ? "Monica" : "the dog";
   return `Who ate the last cookie? It was ${who}!`;
 }
+
+//195
+
+function whoIsPaying(name) {
+  return name.length > 2 ? [name, name.slice(0, 2)] : [name];
+}
+
+console.log(whoIsPaying("Mexico"));
