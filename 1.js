@@ -2800,3 +2800,14 @@ Sleigh.prototype.authenticate = function (name, password) {
 const sleigh = new Sleigh();
 
 console.log(sleigh.authenticate("Santa Claus", "Ho Ho Ho!"));
+
+//  bs
+
+function Sleigh() {
+  this.name = "Santa Claus";
+  this.password = "Ho Ho Ho!";
+}
+
+Sleigh.prototype.authenticate = function (name, password) {
+  return this.name == name && this.password == password;
+};
