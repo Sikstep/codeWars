@@ -2789,7 +2789,7 @@ function whoIsPaying(name) {
 
 console.log(whoIsPaying("Mexico"));
 
-//196
+//196 prototype!
 
 function Sleigh() {}
 
