@@ -2811,3 +2811,12 @@ function Sleigh() {
 Sleigh.prototype.authenticate = function (name, password) {
   return this.name == name && this.password == password;
 };
+
+//197
+
+function odds(values) {
+  // arrow it
+  return values.filter((a) => a % 2 !== 0);
+}
+
+console.log(odds([]));
