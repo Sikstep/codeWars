@@ -2775,7 +2775,7 @@ console.log(cookie("Ryan"));
 
 //bs
 
-function cookie(x) {
+function cookie(xR) {
   var t = typeof x;
   var who = t == "string" ? "Zach" : t == "number" ? "Monica" : "the dog";
   return `Who ate the last cookie? It was ${who}!`;
@@ -2788,3 +2788,15 @@ function whoIsPaying(name) {
 }
 
 console.log(whoIsPaying("Mexico"));
+
+//196
+
+function Sleigh() {}
+
+Sleigh.prototype.authenticate = function (name, password) {
+  return name === "Santa Claus" && password === "Ho Ho Ho!";
+};
+
+const sleigh = new Sleigh();
+
+console.log(sleigh.authenticate("Santa Claus", "Ho Ho Ho!"));
