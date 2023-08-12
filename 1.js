@@ -2856,3 +2856,9 @@ function contamination(text, char) {
 }
 
 console.log(contamination("abs", "z"));
+
+const combineNames = (a, b) => {
+  return `${a} ${b}`;
+};
+
+console.log(combineNames("James", "Stevens"));
