@@ -2863,3 +2863,7 @@ const combineNames = (a, b) => {
 };
 
 console.log(combineNames("James", "Stevens"));
+
+//bs
+
+const combineNames1 = (...names) => names.join(" ");
