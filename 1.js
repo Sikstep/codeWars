@@ -2857,6 +2857,7 @@ function contamination(text, char) {
 
 console.log(contamination("abs", "z"));
 
+//200
 const combineNames = (a, b) => {
   return `${a} ${b}`;
 };
