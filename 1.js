@@ -2843,3 +2843,16 @@ function calculator(a, b, sign) {
 }
 
 console.log(calculator(1, 2, "+"));
+
+// 199
+
+function contamination(text, char) {
+  return text.length > 0 && char.length > 0
+    ? text
+        .split("")
+        .map((el) => (el = char))
+        .join("")
+    : "";
+}
+
+console.log(contamination("abs", "z"));
