@@ -2867,3 +2867,11 @@ console.log(combineNames("James", "Stevens"));
 //bs
 
 const combineNames1 = (...names) => names.join(" ");
+
+//201
+
+let a = 1;
+
+while (a <= 5) {
+  console.log(a++);
+}
