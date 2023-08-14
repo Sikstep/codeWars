@@ -2875,3 +2875,10 @@ let a = 1;
 while (a <= 5) {
   console.log(a++);
 }
+
+//202
+const arr = ["red", "orange", "yellow", "green", "blue", "violet"];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
