@@ -2883,3 +2883,17 @@ const arr1 = ["red", "orange", "yellow", "green", "blue", "violet"];
 for (let i = arr1.length - 1; i >= 0; i--) {
   console.log(arr[i]);
 }
+
+//203
+
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+for (let i = 0; i < matrix.length; i++) {
+  for (let j = 0; j < matrix[i].length; j++) {
+    console.log(matrix[i][j]);
+  }
+}
