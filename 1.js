@@ -2897,3 +2897,11 @@ for (let i = 0; i < matrix.length; i++) {
     console.log(matrix[i][j] - 1);
   }
 }
+
+//204
+
+function shortenToDate(longDate) {
+  return longDate.split(" ").splice(0, 3).join(" ").replace(/,/gi, "").trim();
+}
+
+console.log(shortenToDate("Friday May 2, 9am"));
