@@ -2909,3 +2909,8 @@ console.log(shortenToDate("Friday May 2, 9am"));
 //bs
 
 const shortenToDate1 = (longDate) => longDate.split(",")[0];
+
+//205
+function toCsvText(array) {
+  return array.join("\n");
+}
