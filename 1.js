@@ -2923,3 +2923,11 @@ console.log(
     [30, 31, 32, 33, 34],
   ])
 );
+
+//206
+
+const webChange = (message, n) => {
+  return Array(n).fill(message);
+};
+
+let websites = webChange("codewars", 1000);
