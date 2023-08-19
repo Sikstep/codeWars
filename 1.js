@@ -2931,3 +2931,10 @@ const webChange = (message, n) => {
 };
 
 let websites = webChange("codewars", 1000);
+
+//207
+function getNumberFromString(s) {
+  return +s.replace(/\D/gi, "");
+}
+
+console.log(getNumberFromString("1"));
