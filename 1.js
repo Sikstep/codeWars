@@ -2999,10 +2999,18 @@ const isVow = (a) =>
 // - Затем происходит проверка: если символ y присутствует в строке 'aeiou', что соответствует гласным буквам (a, e, i, o, u),
 //   то возвращается символ y. В противном случае возвращается исходное значение x.
 
-//210 regular expresion
+//210 regular expression
 
 function validateCode(code) {
   return /^[123]/.test(code);
 }
 
 console.log(validateCode(123));
+
+// bs
+
+function validateCode1(code) {
+  return /^[1-3]/.test(code);
+}
+
+console.log(validateCode1(123));
