@@ -2959,3 +2959,30 @@ function calculateTip(amount, rating) {
 }
 
 console.log(calculateTip(20, "Excellent"));
+
+//209 замена символов в массиве
+
+function isVow(a) {
+  let newArr = [];
+  for (let i = 0; i < a.length; i++) {
+    a[i] === 97
+      ? (newArr[i] = "a")
+      : a[i] === 101
+      ? (newArr[i] = "e")
+      : a[i] === 105
+      ? (newArr[i] = "i")
+      : a[i] === 111
+      ? (newArr[i] = "o")
+      : a[i] === 117
+      ? (newArr[i] = "u")
+      : (newArr[i] = a[i]);
+  }
+  return newArr;
+}
+
+console.log(
+  isVow([
+    118, 117, 120, 121, 117, 98, 122, 97, 120, 106, 104, 116, 113, 114, 113,
+    120, 106,
+  ])
+);
