@@ -3026,3 +3026,8 @@ function numberToPower(number, power) {
 }
 
 console.log(numberToPower(4, 2));
+
+//bs with scope (замыкание)
+
+const numberToPower = (number, power) =>
+  power > 0 ? number * numberToPower(number, power - 1) : 1;
