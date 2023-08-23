@@ -3014,3 +3014,15 @@ function validateCode1(code) {
 }
 
 console.log(validateCode1(123));
+
+//211
+function numberToPower(number, power) {
+  if (power === 0) return 1;
+  let newNum = number;
+  for (let i = 1; i < power; i++) {
+    newNum *= number;
+  }
+  return newNum;
+}
+
+console.log(numberToPower(4, 2));
