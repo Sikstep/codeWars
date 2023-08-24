@@ -3031,3 +3031,12 @@ console.log(numberToPower(4, 2));
 
 const numberToPower = (number, power) =>
   power > 0 ? number * numberToPower(number, power - 1) : 1;
+
+//212 start
+
+let ex_names = ["a", "b", "c", "d", "c", "e", "f", "g", "h", "z"];
+function duckDuckGoose(players, goose) {
+  // ...
+}
+
+console.log(duckDuckGoose(ex_names, 3));
