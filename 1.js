@@ -3036,7 +3036,7 @@ const numberToPower = (number, power) =>
 
 let ex_names = ["a", "b", "c", "d", "c", "e", "f", "g", "h", "z"];
 function duckDuckGoose(players, goose) {
-  // ...
+  // ...йцу
 }
 
 console.log(duckDuckGoose(ex_names, 3));
