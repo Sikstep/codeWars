@@ -3050,3 +3050,16 @@ function duckDuckGoose1(players, goose) {
 
 const duckDuckGoose1 = (players, goose) =>
   players[(goose - 1) % players.length].name;
+
+// 213 cycle
+
+function billboard(name, price = 30) {
+  let newArr = name.split("");
+  let total = 0;
+  for (let i = 0; i < newArr.length; i++) {
+    total += price;
+  }
+  return total;
+}
+
+console.log(billboard("Jeong-Ho Aristotelis"));
