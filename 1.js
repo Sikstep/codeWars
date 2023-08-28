@@ -3045,3 +3045,8 @@ function duckDuckGoose1(players, goose) {
 
   return goose <= players.length ? players[goose - 1] : players[curInd - 1];
 }
+
+//bs
+
+const duckDuckGoose1 = (players, goose) =>
+  players[(goose - 1) % players.length].name;
