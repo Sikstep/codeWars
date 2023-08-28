@@ -3035,8 +3035,13 @@ const numberToPower = (number, power) =>
 //212 start
 
 let ex_names = ["a", "b", "c", "d", "c", "e", "f", "g", "h", "z"];
-function duckDuckGoose(players, goose) {
-  // ...йцу
-}
+function duckDuckGoose1(players, goose) {
+  let grad = Math.floor(goose / players.length);
 
-console.log(duckDuckGoose(ex_names, 3));
+  let curInd = goose - players.length * grad;
+  if (curInd === 0) {
+    curInd = players.length;
+  }
+
+  return goose <= players.length ? players[goose - 1] : players[curInd - 1];
+}
