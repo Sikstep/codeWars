@@ -3063,3 +3063,15 @@ function billboard(name, price = 30) {
 }
 
 console.log(billboard("Jeong-Ho Aristotelis"));
+
+// 213 cycle refactoring
+
+function billboard2(name, price = 30) {
+  let total = 0;
+  for (let i = 0; i < name.length; i++) {
+    total += price;
+  }
+  return total;
+}
+
+console.log(billboard2("Jeong-Ho Aristotelis"));
