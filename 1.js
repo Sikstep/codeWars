@@ -3075,3 +3075,19 @@ function billboard2(name, price = 30) {
 }
 
 console.log(billboard2("Jeong-Ho Aristotelis"));
+
+//214 randomColor
+
+const getRandomColor = () => {
+  const randomNumber = () => Math.floor(Math.random() * 225);
+  console.log(randomNumber());
+
+  let arr = [];
+
+  for (let i = 0; i < 3; i++) {
+    arr.push(randomNumber());
+  }
+
+  return `rgb(${arr[0]}, ${arr[1]}, ${arr[2]})`;
+};
+console.log(getRandomColor());
