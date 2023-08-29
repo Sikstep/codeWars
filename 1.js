@@ -3101,7 +3101,7 @@ const getRandomColor1 = () => {
 };
 console.log(getRandomColor1());
 
-//215 find params
+//215 find params for path
 
 function get(obj, path) {
   const tokens = path.split(".");
