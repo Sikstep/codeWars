@@ -3091,3 +3091,12 @@ const getRandomColor = () => {
   return `rgb(${arr[0]}, ${arr[1]}, ${arr[2]})`;
 };
 console.log(getRandomColor());
+
+//bs
+
+const getRandomColor1 = () => {
+  const randomNumber = () => Math.floor(Math.random() * 225);
+
+  return `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
+};
+console.log(getRandomColor1());
