@@ -3121,3 +3121,8 @@ console.log(get(obj, "a.b"));
 console.log(get(obj, "a.b.c"));
 console.log(get(obj, "a.e"));
 console.log(get(obj, "a.x.e"));
+
+//216 string
+function joinStrings1(string1, string2) {
+  return `${string1} ${string2}`;
+}
