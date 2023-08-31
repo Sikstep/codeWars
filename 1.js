@@ -3126,3 +3126,15 @@ console.log(get(obj, "a.x.e"));
 function joinStrings1(string1, string2) {
   return `${string1} ${string2}`;
 }
+
+//217 charcode
+
+function uniTotal(string) {
+  let total = 0;
+  for (let i = 0; i < string.length; i++) {
+    total += string.charCodeAt(i);
+  }
+  return total;
+}
+
+console.log(uniTotal("a"));
