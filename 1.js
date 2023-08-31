@@ -3150,3 +3150,4 @@ function multiply(number) {
 }
 
 console.log(multiply(10));
+console.log(multiply(-2));
