@@ -3143,3 +3143,10 @@ console.log(uniTotal("a"));
 
 const uniTotal1 = (str) =>
   [...str].reduce((acc, char) => acc + char.charCodeAt(0), 0);
+
+//218
+function multiply(number) {
+  return number * 5 ** String(number).replace(/-/gi, "").length;
+}
+
+console.log(multiply(10));
