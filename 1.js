@@ -3151,3 +3151,14 @@ function multiply(number) {
 
 console.log(multiply(10));
 console.log(multiply(-2));
+
+//219
+function myFirstKata(a, b) {
+  if (typeof a === "number" || typeof b === "number") {
+    return (a % b) + (b % a);
+  } else {
+    return false;
+  }
+}
+
+console.log(myFirstKata(3, 5));
