@@ -3162,3 +3162,11 @@ function myFirstKata(a, b) {
 }
 
 console.log(myFirstKata(3, 5));
+
+//220
+
+function sakuraFall(v) {
+  return v >= 0 ? 400 / v : 0; // your code here
+}
+
+console.log(sakuraFall(5));
