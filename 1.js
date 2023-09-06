@@ -3173,6 +3173,22 @@ console.log(sakuraFall(5));
 
 //221 проверка на пустой объект
 
-let obj1 = {url:'asdasd'}
+let obj1 = { url: "asdasd" };
 console.log(Object.keys(obj1).length);
 console.log(Object.values(obj1).length);
+
+//222
+
+function find(arr, value) {
+  return arr.includes(value);
+}
+
+console.log(find(["lena", 1, 2, 3, 4], "lena"));
+
+//223
+
+const newFoo = (num) => {
+  return typeof num === "number" ? num * 50 + 6 : `Ошибка`;
+};
+
+console.log(newFoo(3));
