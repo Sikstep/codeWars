@@ -3183,7 +3183,6 @@ function find(arr, value) {
   return arr.includes(value);
 }
 
-
 console.log(find(["lena", 1, 2, 3, 4], "lena"));
 
 //223
@@ -3193,3 +3192,18 @@ const newFoo = (num) => {
 };
 
 console.log(newFoo(3));
+
+//224 удалить первый и последний элемент строки
+
+const correctStr = (str) => {
+  return str.slice(1, -1);
+};
+
+console.log(correctStr("asdqwfas"));
+
+//225 map
+
+const reverseArr = (arr) => {
+  return arr.map((el) => el * -1);
+};
+console.log(reverseArr([1, 2, 3, 4, 5, -3, -4]));
