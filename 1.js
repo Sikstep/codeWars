@@ -3183,6 +3183,7 @@ function find(arr, value) {
   return arr.includes(value);
 }
 
+
 console.log(find(["lena", 1, 2, 3, 4], "lena"));
 
 //223
