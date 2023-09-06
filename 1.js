@@ -3170,3 +3170,9 @@ function sakuraFall(v) {
 }
 
 console.log(sakuraFall(5));
+
+//221 проверка на пустой объект
+
+let obj1 = {url:'asdasd'}
+console.log(Object.keys(obj1).length);
+console.log(Object.values(obj1).length);
