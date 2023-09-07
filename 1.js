@@ -3204,6 +3204,6 @@ console.log(correctStr("asdqwfas"));
 //225 map
 
 const reverseArr = (arr) => {
-  return arr.map((el) => el * -1);
+  return arr.map((el) => -el);
 };
 console.log(reverseArr([1, 2, 3, 4, 5, -3, -4]));
