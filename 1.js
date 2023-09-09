@@ -3223,3 +3223,23 @@ class Person {
 let john = new Person("john", 34);
 
 console.log(john.info);
+
+//227
+
+let websites1 = [];
+
+websites1.push("codewars");
+
+console.log(websites);
+
+//228
+
+function getStatus(isBusy) {
+  let msg = isBusy ? "busy" : "available";
+
+  return {
+    status: msg,
+  };
+}
+
+console.log(getStatus(false).status);
