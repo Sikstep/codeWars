@@ -3250,3 +3250,20 @@ function pointsPer48(ppg, mpg) {
 }
 
 console.log(pointsPer48(12, 20));
+
+//230
+
+function padIt(str, n) {
+  let newStr = [str];
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 !== 0) {
+      newStr.unshift("*");
+    } else {
+      newStr.push("*");
+    }
+  }
+  return newStr.join("");
+}
+
+console.log(padIt("a", 5));
+console.log(padIt("moybwuceaz", 11));
