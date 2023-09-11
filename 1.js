@@ -3284,3 +3284,15 @@ function padIt1(str, n) {
 
 console.log(padIt1("a", 5));
 console.log(padIt1("moybwuceaz", 11));
+
+//231
+
+function isPythagoreanTriple(integers) {
+  return (
+    integers[0] ** 2 + integers[1] ** 2 === integers[2] ** 2 ||
+    integers[1] ** 2 + integers[2] ** 2 === integers[0] ** 2 ||
+    integers[2] ** 2 + integers[0] ** 2 === integers[1] ** 2
+  );
+}
+
+console.log(isPythagoreanTriple([3, 4, 5]));
