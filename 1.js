@@ -3267,3 +3267,20 @@ function padIt(str, n) {
 
 console.log(padIt("a", 5));
 console.log(padIt("moybwuceaz", 11));
+
+function padIt1(str, n) {
+  let newStr = [str];
+  let i = 1;
+  while (i <= n) {
+    if (i % 2 !== 0) {
+      newStr.unshift("*");
+    } else {
+      newStr.push("*");
+    }
+    i++;
+  }
+  return newStr.join("");
+}
+
+console.log(padIt1("a", 5));
+console.log(padIt1("moybwuceaz", 11));
