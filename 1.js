@@ -3303,3 +3303,29 @@ function isPythagoreanTriple1(integers) {
   let massiv = integers.sort((a, b) => a - b);
   return massiv[0] ** 2 + massiv[1] ** 2 == massiv[2] ** 2;
 }
+
+//232
+
+function isOpposite(s1, s2) {
+  let s1text = s1.split("");
+
+  let s2text = s2.split("");
+
+  let result = false;
+  if (s1 === "" || s2 === "") {
+    result = false;
+  }
+  for (let i = 0; i < s1text.length; i++) {
+    if (
+      s1text[i] === s1text[i].toLowerCase() &&
+      s2text[i] === s2text[i].toUpperCase()
+    ) {
+      result = true;
+    } else {
+      result = false;
+    }
+  }
+  return result;
+}
+
+console.log(isOpposite("ab", "AB"));
