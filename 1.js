@@ -3305,7 +3305,7 @@ function isPythagoreanTriple1(integers) {
 }
 
 //232
-
+// have some problem
 function isOpposite(s1, s2) {
   let s1text = s1.split("");
 
