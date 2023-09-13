@@ -3307,25 +3307,19 @@ function isPythagoreanTriple1(integers) {
 //232
 // have some problem
 function isOpposite(s1, s2) {
-  let s1text = s1.split("");
-
-  let s2text = s2.split("");
-
-  let result = false;
   if (s1 === "" || s2 === "") {
-    result = false;
+    return false;
   }
-  for (let i = 0; i < s1text.length; i++) {
-    if (
-      s1text[i] === s1text[i].toLowerCase() &&
-      s2text[i] === s2text[i].toUpperCase()
-    ) {
-      result = true;
+
+  for (let i = 0; i < s1.length; i++) {
+    if (s1[i] === s1[i].toLowerCase() && s2[i] === s2[i].toUpperCase()) {
+      return true;
     } else {
-      result = false;
+      return false;
     }
   }
-  return result;
+  return true;
 }
 
 console.log(isOpposite("ab", "AB"));
+console.log(isOpposite("AB", "Ab"));
