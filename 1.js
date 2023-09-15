@@ -3370,4 +3370,6 @@ function grabDoll(dolls) {
 }
 //234
 
-function arf(a, b) {}
+function isDigit(s) {
+  //your code
+}
