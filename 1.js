@@ -3380,3 +3380,9 @@ function isDigit(s) {
 }
 
 console.log(isDigit("s2425"));
+
+//bs
+
+function isDigit1(s) {
+  return s == parseFloat(s);
+}
