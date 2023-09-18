@@ -3370,4 +3370,6 @@ function grabDoll(dolls) {
 }
 //234
 
-function isDigit(s) {}
+function isDigit(s) {
+  return !isNaN(Number(s));
+}
