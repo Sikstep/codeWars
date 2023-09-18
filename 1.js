@@ -3371,7 +3371,12 @@ function grabDoll(dolls) {
 //234
 
 function isDigit(s) {
-  return !isNaN(Number(s));
+  let trimmedS = s.trim();
+  if (trimmedS === "") {
+    return false;
+  }
+
+  return !isNaN(Number(trimmedS));
 }
 
-console.log(isDigit("s1234"));
+console.log(isDigit("s2425"));
