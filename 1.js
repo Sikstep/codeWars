@@ -3370,6 +3370,4 @@ function grabDoll(dolls) {
 }
 //234
 
-function isDigit(s) {
-  //your code
-}
+function isDigit(s) {}
