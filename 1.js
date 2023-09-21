@@ -3430,3 +3430,11 @@ const cannonsReady = (gunners) => {
 
 console.log(cannonsReady(a));
 console.log(cannonsReady(b));
+
+//bs
+
+const cannonsReady1 = (gunners) => {
+  return Object.values(gunners).some((m) => m === "nay")
+    ? "Shiver me timbers!"
+    : "Fire!";
+};
