@@ -3439,6 +3439,7 @@ const cannonsReady1 = (gunners) => {
     : "Fire!";
 };
 
+//with cycle
 const cannonsReady2 = (gunners) => {
   for (var i in gunners) {
     if (gunners[i] == "nay") {
