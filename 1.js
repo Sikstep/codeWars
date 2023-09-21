@@ -3438,3 +3438,12 @@ const cannonsReady1 = (gunners) => {
     ? "Shiver me timbers!"
     : "Fire!";
 };
+
+const cannonsReady2 = (gunners) => {
+  for (var i in gunners) {
+    if (gunners[i] == "nay") {
+      return "Shiver me timbers!";
+    }
+  }
+  return "Fire!";
+};
