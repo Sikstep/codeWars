@@ -3418,8 +3418,8 @@ console.log(quote1("Conor McGregor"));
 
 //236
 
-let a = { Mike: "aye", Joe: "aye", Johnson: "aye", Peter: "aye" };
-let b = { Mike: "aye", Joe: "nay", Johnson: "aye", Peter: "aye" };
+let aa = { Mike: "aye", Joe: "aye", Johnson: "aye", Peter: "aye" };
+let bb = { Mike: "aye", Joe: "nay", Johnson: "aye", Peter: "aye" };
 
 const cannonsReady = (gunners) => {
   let values = Object.values(gunners).filter((el) => el === "aye");
@@ -3428,8 +3428,8 @@ const cannonsReady = (gunners) => {
     : "Shiver me timbers!";
 };
 
-console.log(cannonsReady(a));
-console.log(cannonsReady(b));
+console.log(cannonsReady(aa));
+console.log(cannonsReady(bb));
 
 //bs
 
@@ -3448,3 +3448,22 @@ const cannonsReady2 = (gunners) => {
   }
   return "Fire!";
 };
+
+//237
+
+function leo(oscar) {
+  switch (true) {
+    case oscar === 88:
+      return "Leo finally won the oscar! Leo is happy";
+    case oscar > 88:
+      return "Leo got one already!";
+    case oscar < 88 && oscar > 86:
+      return "When will you give Leo an Oscar?";
+    case oscar === 86:
+      return "Not even for Wolf of wallstreet?!";
+    default:
+      return "When will you give Leo an Oscar?";
+  }
+}
+
+console.log(leo(89));
