@@ -3415,3 +3415,18 @@ var quote1 = function (fighter) {
 
 console.log(quote1("george saint pierre"));
 console.log(quote1("Conor McGregor"));
+
+//236
+
+let a = { Mike: "aye", Joe: "aye", Johnson: "aye", Peter: "aye" };
+let b = { Mike: "aye", Joe: "nay", Johnson: "aye", Peter: "aye" };
+
+const cannonsReady = (gunners) => {
+  let values = Object.values(gunners).filter((el) => el === "aye");
+  return values.length === Object.keys(gunners).length
+    ? "Fire!"
+    : "Shiver me timbers!";
+};
+
+console.log(cannonsReady(a));
+console.log(cannonsReady(b));
