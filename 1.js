@@ -3487,3 +3487,11 @@ var TempleStrings = function (obj, feature) {
 };
 
 console.log(TempleStrings("Animals", "Good"));
+
+//239 перевод в двоичную систему
+
+const findEvil = (a) => {
+  return a.toString(2);
+};
+
+console.log(findEvil(3));
