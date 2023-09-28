@@ -3479,3 +3479,11 @@ const leo1 = (oscar) => {
     ? "When will you give Leo an Oscar?"
     : "Leo got one already!";
 };
+
+//238
+
+var TempleStrings = function (obj, feature) {
+  return `${obj} are ${feature}`;
+};
+
+console.log(TempleStrings("Animals", "Good"));
