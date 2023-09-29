@@ -3491,7 +3491,14 @@ console.log(TempleStrings("Animals", "Good"));
 //239 перевод в двоичную систему
 
 const findEvil = (a) => {
-  return a.toString(2);
+  return a
+    .toString(2)
+    .split("")
+    .filter((el) => el == 1).length %
+    2 ===
+    0
+    ? `It's Odious!`
+    : `It's Evil!`;
 };
 
 console.log(findEvil(3));
