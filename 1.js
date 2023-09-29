@@ -3550,3 +3550,5 @@ function correctPolishLetters(string) {
     .map((c) => polishLetters[c] || c)
     .join("");
 }
+
+// solution with regular expression
