@@ -3564,5 +3564,6 @@ function correctPolishLetters(string) {
     ź: "z",
     ż: "z",
   };
+
   return string.replace(/[ąćęłńóśźż]/g, (match) => dict[match]);
 }
