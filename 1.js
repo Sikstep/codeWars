@@ -3588,3 +3588,7 @@ function toFreud(string) {
 }
 
 console.log(toFreud("1"));
+
+//with regular
+
+var toFreud1 = (s) => s.replace(/[^ ]+/g, "sex");
