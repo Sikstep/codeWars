@@ -3609,3 +3609,13 @@ let newHero = new Hero();
 console.log(newHero.name);
 
 console.log(newHero);
+
+//244 Math.round & Math.min
+
+function fuelPrice(litres, pricePerLitre) {
+  let discount = Math.min(Math.floor(litres / 2) * 0.05, 0.25);
+  let priceWithDiscount = pricePerLitre - discount;
+  return Math.round(litres * priceWithDiscount * 100) / 100;
+}
+
+console.log(fuelPrice(5, 1.23));
