@@ -3856,3 +3856,19 @@ man7FullCopy.mother.parents[1].favoriteDish.ingredients[1].title = "Manka";
 
 console.log(man7.mother.parents[1].favoriteDish.ingredients[1].title);
 console.log(man7FullCopy.mother.parents[1].favoriteDish.ingredients[1].title);
+
+// 14. Д.З.:
+// Напишите функцию addFriends, которая принимает параметром массив students
+// и добавляет в каждому студенту свойство "friends",
+// значением которого является массив имён всех остальных студентов из массива students,
+// за исключением собственного имени студента. Т.е. в друзьях у Боба Боба быть не должно.
+
+const addFriends = (students) => {
+  const names = students.map((el) => el.name);
+  const friendsList = students.map((el, index) => ({
+    ...el,
+    friend: names.filter((n) => n !== el.name),
+  }));
+  return friendsList;
+};
+console.log(addFriends(students));
