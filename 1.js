@@ -3592,3 +3592,20 @@ console.log(toFreud("1"));
 //with regular
 
 var toFreud1 = (s) => s.replace(/[^ ]+/g, "sex");
+
+console.log(toFreud1("1"));
+
+//243 class через function
+
+function Hero(name = "Hero") {
+  this.name = name;
+  this.position = "00";
+  this.health = 100;
+  this.damage = 5;
+  this.experience = 0;
+}
+
+let newHero = new Hero();
+console.log(newHero.name);
+
+console.log(newHero);
