@@ -3872,3 +3872,22 @@ const addFriends = (students) => {
   return friendsList;
 };
 console.log(addFriends(students));
+
+// 15. Д.З.: Напишите функцию getBestStudents, которая принимает параметром
+// массив students  и количество лучших студентов, которое надо получить в
+// новом массиве. Если второго параметра нет, то по умолчанию возвращает лучшего студента
+// getBestStudents(students) => {name: "Nick", age: 20, isMarried: false, scores: 120}
+// getBestStudents(students, 3) => [{...}, {...}, {...}]
+// getBestStudents(students, 10) => [{}, {}, ...., {}, null, null, null, null ]
+
+const getBestStudents = (arrStud, count) => {
+  return count
+    ? arrStud
+        .sort((a, b) => b.scores - a.scores)
+        .filter((el, index) => index < count)
+    : arrStud.sort((a, b) => b.scores - a.scores)[0];
+};
+
+console.log(getBestStudents(students));
+console.log(getBestStudents(students, 3));
+console.log(getBestStudents(students, 10));
