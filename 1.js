@@ -3567,3 +3567,12 @@ function correctPolishLetters(string) {
 
   return string.replace(/[ąćęłńóśźż]/g, (match) => dict[match]);
 }
+
+//241
+
+function parseF(s) {
+  let parsed = parseFloat(s);
+  return isNaN(parsed) ? null : parsed;
+}
+
+console.log(parseF("1"));
