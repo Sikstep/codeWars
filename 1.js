@@ -3576,3 +3576,15 @@ function parseF(s) {
 }
 
 console.log(parseF("1"));
+
+//242
+
+function toFreud(string) {
+  if (string === "") return "";
+  return string
+    .split(" ")
+    .map((el) => (el = "sex"))
+    .join(" ");
+}
+
+console.log(toFreud("1"));
