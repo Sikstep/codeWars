@@ -3954,3 +3954,19 @@ let calc = new Calculator();
 calc.read();
 alert("sum=" + calc.sum());
 alert("mul=" + calc.mul());
+
+//251 create function accumulator with prompt
+
+function Accumulator(startingValue) {
+  this.value = startingValue;
+  this.promptValue = null;
+  this.read = function () {
+    this.promptValue = +prompt("Сколько необходимо прибавить?");
+    return (this.value += this.promptValue);
+  };
+}
+let accumulator = new Accumulator(1);
+console.log(accumulator.value);
+accumulator.read();
+accumulator.read();
+alert(accumulator.value);
