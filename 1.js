@@ -3911,3 +3911,12 @@ function flickSwitch(arr) {
 
   return newArr;
 }
+
+//bs
+
+function flickSwitch1(arr) {
+  let returning = true;
+  return arr.map((v) => {
+    return v === "flick" ? (returning = !returning) : returning;
+  });
+}
