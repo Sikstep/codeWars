@@ -3933,3 +3933,24 @@ function neutralise(s1, s2) {
 }
 
 console.log(neutralise("++-++--++-", "-+++-++-++"));
+
+// creat function calculator with prompt
+function Calculator() {
+  this.a = null;
+  this.b = null;
+  this.read = function () {
+    this.a = +prompt("Введите первое значение");
+    this.b = +prompt("Введите второе значение");
+  };
+  this.sum = function () {
+    return this.a + this.b;
+  };
+  this.mul = function () {
+    return this.a * this.b;
+  };
+}
+
+let calc = new Calculator();
+calc.read();
+alert("sum=" + calc.sum());
+alert("mul=" + calc.mul());
