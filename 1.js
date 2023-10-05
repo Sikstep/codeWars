@@ -3934,7 +3934,7 @@ function neutralise(s1, s2) {
 
 console.log(neutralise("++-++--++-", "-+++-++-++"));
 
-// creat function calculator with prompt
+//250 creat function calculator with prompt
 function Calculator() {
   this.a = null;
   this.b = null;
