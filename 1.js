@@ -3891,3 +3891,23 @@ const getBestStudents = (arrStud, count) => {
 console.log(getBestStudents(students));
 console.log(getBestStudents(students, 3));
 console.log(getBestStudents(students, 10));
+
+//245 cycle
+
+function flickSwitch(arr) {
+  if (arr.length === 0) return [];
+
+  let indicator = true;
+  const newArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "flick") {
+      indicator = !indicator;
+      newArr.push(indicator);
+    } else {
+      newArr.push(indicator);
+    }
+  }
+
+  return newArr;
+}
