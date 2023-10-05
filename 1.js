@@ -3920,3 +3920,16 @@ function flickSwitch1(arr) {
     return v === "flick" ? (returning = !returning) : returning;
   });
 }
+
+//249 cycle
+function neutralise(s1, s2) {
+  let newStr = "";
+
+  for (let i = 0; i < s1.length; i++) {
+    s1[i] === s2[i] ? (newStr += s1[i]) : (newStr += 0);
+  }
+
+  return newStr;
+}
+
+console.log(neutralise("++-++--++-", "-+++-++-++"));
