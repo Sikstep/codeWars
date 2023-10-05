@@ -3967,3 +3967,15 @@ console.log(accumulator.value);
 accumulator.read();
 accumulator.read();
 alert(accumulator.value);
+
+//252 splice + split + join
+
+function twoDecimalPlaces(number) {
+  let splitedCount = String(number).split(".");
+  let secondVal = splitedCount[1];
+  let newSecond = secondVal.slice(0, 2);
+  splitedCount[1] = newSecond;
+  return +splitedCount.join(".");
+}
+
+console.log(twoDecimalPlaces(10.12123124123123));
