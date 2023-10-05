@@ -3979,3 +3979,11 @@ function twoDecimalPlaces(number) {
 }
 
 console.log(twoDecimalPlaces(10.12123124123123));
+
+//bs with Math.trunc
+
+const twoDecimalPlaces1 = number => Math.trunc(number*100)/100
+
+//bs with | 0
+
+const twoDecimalPlaces2 = number => ((10.122341 * 100) | 0)/100
