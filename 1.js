@@ -3935,12 +3935,11 @@ function neutralise(s1, s2) {
 console.log(neutralise("++-++--++-", "-+++-++-++"));
 
 //250 creat function calculator with prompt
+
 function Calculator() {
-  this.a = null;
-  this.b = null;
   this.read = function () {
-    this.a = +prompt("Введите первое значение");
-    this.b = +prompt("Введите второе значение");
+    this.a = +prompt("Введите первое значение", 0);
+    this.b = +prompt("Введите второе значение", 0);
   };
   this.sum = function () {
     return this.a + this.b;
@@ -3959,10 +3958,8 @@ alert("mul=" + calc.mul());
 
 function Accumulator(startingValue) {
   this.value = startingValue;
-  this.promptValue = null;
   this.read = function () {
-    this.promptValue = +prompt("Сколько необходимо прибавить?");
-    return (this.value += this.promptValue);
+    this.value += +prompt("Сколько необходимо прибавить?", 0);
   };
 }
 let accumulator = new Accumulator(1);
