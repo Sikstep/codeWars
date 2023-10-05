@@ -3892,7 +3892,7 @@ console.log(getBestStudents(students));
 console.log(getBestStudents(students, 3));
 console.log(getBestStudents(students, 10));
 
-//245 cycle
+//248 cycle
 
 function flickSwitch(arr) {
   if (arr.length === 0) return [];
