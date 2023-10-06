@@ -4076,4 +4076,5 @@ class ClockClass {
 
 let clockClass = new ClockClass({ template: "h:m:s" });
 clockClass.start();
+
 clockClass.stop();
