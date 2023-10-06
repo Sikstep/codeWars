@@ -3993,3 +3993,11 @@ const twoDecimalPlaces2 = (number) => ((10.122341 * 100) | 0) / 100;
 function mergeArrays(a, b) {
   return [...new Set([...a, ...b].sort((a, b) => a - b))];
 }
+
+//254
+
+function getASCII(c) {
+  return c.charCodeAt();
+}
+
+console.log(getASCII("A"));
