@@ -3982,8 +3982,14 @@ console.log(twoDecimalPlaces(10.12123124123123));
 
 //bs with Math.trunc
 
-const twoDecimalPlaces1 = number => Math.trunc(number*100)/100
+const twoDecimalPlaces1 = (number) => Math.trunc(number * 100) / 100;
 
 //bs with | 0
 
-const twoDecimalPlaces2 = number => ((10.122341 * 100) | 0)/100
+const twoDecimalPlaces2 = (number) => ((10.122341 * 100) | 0) / 100;
+
+//253 new Set
+
+function mergeArrays(a, b) {
+  return [...new Set([...a, ...b].sort((a, b) => a - b))];
+}
