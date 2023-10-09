@@ -4080,3 +4080,10 @@ clockClass.start();
 clockClass.stop();
 
 //256
+function excludingVatPrice(price) {
+  if (price === 0) return -1;
+  return Math.round(price - Math.round(price * (15 / 115)));
+}
+
+console.log(excludingVatPrice(230));
+console.log(excludingVatPrice(123));
