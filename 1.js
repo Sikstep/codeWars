@@ -4088,3 +4088,4 @@ function excludingVatPrice(price) {
 console.log(excludingVatPrice(230));
 console.log(excludingVatPrice(123));
 console.log(excludingVatPrice(0));
+
