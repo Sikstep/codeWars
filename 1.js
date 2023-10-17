@@ -4089,3 +4089,9 @@ console.log(excludingVatPrice(230));
 console.log(excludingVatPrice(123));
 console.log(excludingVatPrice(0));
 
+//257
+function whoseMove(lastPlayer, win) {
+  return win ? lastPlayer : lastPlayer === "black" ? "white" : "black";
+}
+
+console.log(whoseMove("black", false));
