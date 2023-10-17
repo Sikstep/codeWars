@@ -4093,5 +4093,12 @@ console.log(excludingVatPrice(0));
 function whoseMove(lastPlayer, win) {
   return win ? lastPlayer : lastPlayer === "black" ? "white" : "black";
 }
-
 console.log(whoseMove("black", false));
+
+//258
+
+class Solution {
+  static main() {
+    console.log(`Hello World!`);
+  }
+}
