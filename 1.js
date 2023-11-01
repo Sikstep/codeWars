@@ -4104,3 +4104,6 @@ class Solution {
 }
 
 //259
+let Ghost = function () {
+  // your code goes here
+};
