@@ -4105,5 +4105,15 @@ class Solution {
 
 //259 random color in class
 let Ghost = function () {
-  // your code goes here
+  let colors = ["white", "yellow", "purple", "red"];
+  let randomIndex = Math.floor(Math.random() * colors.length);
+  this.color = colors[randomIndex];
+};
+
+//bs
+
+var GhostBs = function () {
+  this.color = ["white", "yellow", "purple", "red"][
+    Math.floor(Math.random() * 4)
+  ];
 };
