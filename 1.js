@@ -4103,7 +4103,7 @@ class Solution {
   }
 }
 
-//259
+//259 random color in class
 let Ghost = function () {
   // your code goes here
 };
