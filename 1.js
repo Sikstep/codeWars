@@ -4119,3 +4119,10 @@ var GhostBs = function () {
 };
 
 //260
+
+function periodIsLate(last, today, cycleLength) {
+  last.getTime();
+  return false;
+}
+
+console.log(periodIsLate);
