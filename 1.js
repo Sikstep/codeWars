@@ -4121,8 +4121,10 @@ var GhostBs = function () {
 //260
 
 function periodIsLate(last, today, cycleLength) {
-  last.getTime();
-  return false;
+  let differenceInMilisec = today.getTime() - last.getTime();
+  let differenceInDays = differenceInMilisec / (1000 * 60 * 60 * 24);
+  console.log(differenceInDays);
+  return differenceInDays > cycleLength;
 }
 
-console.log(periodIsLate);
+console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 35));
