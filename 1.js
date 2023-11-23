@@ -4128,3 +4128,14 @@ function periodIsLate(last, today, cycleLength) {
 }
 
 console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 35));
+
+//bs
+
+function periodIsLateBS(last, today, cycleLength)
+{
+  //в 1 дне - 86 400 000 миллисекунд (1000 * 60 * 60 * 24)
+  return (today-last)/86400000>cycleLength
+}
+
+console.log(periodIsLateBS(new Date(2016, 6, 13), new Date(2016, 7, 16), 35));
+
