@@ -4140,7 +4140,15 @@ console.log(periodIsLateBS(new Date(2016, 6, 13), new Date(2016, 7, 16), 35));
 
 //261
 function validateHello(greetings) {
-  let res = ["hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"];
+  let greetingsArr = greetings.toLowerCase().split(" ");
 
-  return greetings.includes(...res);
+  let res = ["hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"];
+  let ans = false;
+  for (let i = 0; i < greetings.length; i++) {
+    if (res.includes(greetingsArr[i])) {
+      ans = true;
+    }
+  }
+
+  return ans;
 }
