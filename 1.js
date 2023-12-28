@@ -4157,3 +4157,9 @@ function validateHello(greetings) {
 }
 
 //262
+
+function ifChuckSaysSo() {
+  return !!0;
+}
+
+console.log(ifChuckSaysSo());
