@@ -4187,11 +4187,31 @@ const newState = {
 };
 console.log(newState);
 
-const user = { name1: 'John', age: 25, city: 'New York' };
+const user = { name1: "John", age: 25, city: "New York" };
 
-const {name1, age, city} = user;
+const { name1, age, city } = user;
 
 console.log(name1);
 console.log(age);
 console.log(city);
 
+const fruits = ["apple", "banana", "orange"];
+
+const [, secondFruit, thirdFruit] = fruits;
+
+console.log(secondFruit);
+console.log(thirdFruit);
+
+const person = { name: "Alice", age: 30 };
+
+function printPersonDetails({ name, age }) {
+  console.log(`Name: ${name}, Age: ${age}`);
+}
+
+printPersonDetails(person);
+
+const car = { brand: "Toyota", model: "Camry"};
+
+car.year = car.year ?? '2022';
+
+console.log(car.year);
