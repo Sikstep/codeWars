@@ -4187,3 +4187,11 @@ const newState = {
 };
 console.log(newState);
 
+const user = { name1: 'John', age: 25, city: 'New York' };
+
+const {name1, age, city} = user;
+
+console.log(name1);
+console.log(age);
+console.log(city);
+
