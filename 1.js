@@ -4215,3 +4215,25 @@ const car = { brand: "Toyota", model: "Camry"};
 car.year = car.year ?? '2022';
 
 console.log(car.year);
+
+const students10 = [
+  { name: 'Alex', grade: 'A' },
+  { name: 'Emma', grade: 'B' },
+  { name: 'Chris', grade: 'C' },
+ ];
+ 
+ const [student1, student2, student3] = students10.map(el => el.name)
+
+
+ console.log(student1);
+ console.log(student2);
+ console.log(student3);
+
+ const person1 = { firstName: 'Max', lastName: 'Johnson', age1: 41 };
+
+const {firstName: newFirstName, lastName: newLastName, age1 = 25} = person1;
+
+console.log(age1);
+console.log(newFirstName);
+console.log(newLastName);
+console.log(person1.age1);
