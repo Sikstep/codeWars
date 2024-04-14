@@ -4237,9 +4237,19 @@ console.log(newFirstName);
 console.log(newLastName);
 console.log(person1.age1);
 
+//264 split domen name
 function domainName(url) {
-  return;
+  const strippedUrl = url.replace(/(https?:\/\/)?(www\.)?/, "");
+  console.log(strippedUrl);
+  const partsUrl = strippedUrl.split("/")[0].split(".");
+  console.log(partsUrl);
+  return partsUrl[0];
 }
+
+console.log(domainName("http://google.com"));
+console.log(domainName("http://github.com/carbonfive/raygun"));
+console.log(domainName("http://www.zombie-bites.com"));
+console.log(domainName("www.xakep.ru"));
 
 console.log(domainName("http://google.com"));
 console.log(domainName("http://github.com/carbonfive/raygun"));
