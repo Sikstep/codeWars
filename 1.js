@@ -4210,30 +4210,38 @@ function printPersonDetails({ name, age }) {
 
 printPersonDetails(person);
 
-const car = { brand: "Toyota", model: "Camry"};
+const car = { brand: "Toyota", model: "Camry" };
 
-car.year = car.year ?? '2022';
+car.year = car.year ?? "2022";
 
 console.log(car.year);
 
 const students10 = [
-  { name: 'Alex', grade: 'A' },
-  { name: 'Emma', grade: 'B' },
-  { name: 'Chris', grade: 'C' },
- ];
- 
- const [student1, student2, student3] = students10.map(el => el.name)
+  { name: "Alex", grade: "A" },
+  { name: "Emma", grade: "B" },
+  { name: "Chris", grade: "C" },
+];
 
+const [student1, student2, student3] = students10.map((el) => el.name);
 
- console.log(student1);
- console.log(student2);
- console.log(student3);
+console.log(student1);
+console.log(student2);
+console.log(student3);
 
- const person1 = { firstName: 'Max', lastName: 'Johnson', age1: 41 };
+const person1 = { firstName: "Max", lastName: "Johnson", age1: 41 };
 
-const {firstName: newFirstName, lastName: newLastName, age1 = 25} = person1;
+const { firstName: newFirstName, lastName: newLastName, age1 = 25 } = person1;
 
 console.log(age1);
 console.log(newFirstName);
 console.log(newLastName);
 console.log(person1.age1);
+
+function domainName(url) {
+  return;
+}
+
+console.log(domainName("http://google.com"));
+console.log(domainName("http://github.com/carbonfive/raygun"));
+console.log(domainName("http://www.zombie-bites.com"));
+console.log(domainName("www.xakep.ru"));
